@@ -1,0 +1,407 @@
+@prefix : <http://www.semanticweb.org/ericmoritz/ontologies/2014/1/lottery#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://api.gannett.com/ontologies/lottery> .
+
+<http://api.gannett.com/ontologies/lottery> rdf:type owl:Ontology ;
+                                            
+                                            rdfs:seeAlso "http://www.lottostrategies.com/"^^xsd:anyURI ;
+                                            
+                                            rdfs:comment "The ontology of the Lottery data from http://www.lottostrategies.com/" ;
+                                            
+                                            owl:imports <http://purl.org/goodrelations/v1> .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+
+rdfs:label rdfs:domain :Amount .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+###  http://www.w3.org/2001/XMLSchema#time
+
+xsd:time rdf:type rdfs:Datatype .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://api.gannett.com/ontologies/lottery#hasCountry
+
+<http://api.gannett.com/ontologies/lottery#hasCountry> rdf:type owl:ObjectProperty ;
+                                                       
+                                                       rdfs:range <http://api.gannett.com/ontologies/lottery#LotteryCountry> ;
+                                                       
+                                                       rdfs:domain <http://api.gannett.com/ontologies/lottery#LotteryState> .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#hasDrawDay
+
+<http://api.gannett.com/ontologies/lottery#hasDrawDay> rdf:type owl:ObjectProperty ;
+                                                       
+                                                       rdfs:domain <http://api.gannett.com/ontologies/lottery#LotteryGame> .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#hasGame
+
+<http://api.gannett.com/ontologies/lottery#hasGame> rdf:type owl:ObjectProperty ;
+                                                    
+                                                    rdfs:range <http://api.gannett.com/ontologies/lottery#LotteryGame> ;
+                                                    
+                                                    rdfs:domain <http://api.gannett.com/ontologies/lottery#LotteryState> .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#hasJackpots
+
+<http://api.gannett.com/ontologies/lottery#hasJackpots> rdf:type owl:ObjectProperty ;
+                                                        
+                                                        rdfs:label "has jackpots (0..1)" ;
+                                                        
+                                                        rdfs:range <http://api.gannett.com/ontologies/lottery#Jackpots> ;
+                                                        
+                                                        rdfs:domain <http://api.gannett.com/ontologies/lottery#LotteryGame> ;
+                                                        
+                                                        rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#hasResult
+
+<http://api.gannett.com/ontologies/lottery#hasResult> rdf:type owl:ObjectProperty ;
+                                                      
+                                                      rdfs:domain <http://api.gannett.com/ontologies/lottery#LotteryGame> ;
+                                                      
+                                                      rdfs:range <http://api.gannett.com/ontologies/lottery#LotteryResult> .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#hasState
+
+<http://api.gannett.com/ontologies/lottery#hasState> rdf:type owl:ObjectProperty ;
+                                                     
+                                                     rdfs:domain <http://api.gannett.com/ontologies/lottery#LotteryGame> ;
+                                                     
+                                                     rdfs:range <http://api.gannett.com/ontologies/lottery#LotteryState> .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#isGameOf
+
+<http://api.gannett.com/ontologies/lottery#isGameOf> rdf:type owl:ObjectProperty ;
+                                                     
+                                                     rdfs:range <http://api.gannett.com/ontologies/lottery#LotteryGame> ;
+                                                     
+                                                     rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://api.gannett.com/ontologies/lottery#date
+
+<http://api.gannett.com/ontologies/lottery#date> rdf:type owl:DatatypeProperty ;
+                                                 
+                                                 rdfs:domain <http://api.gannett.com/ontologies/lottery#LotteryJackpot> ;
+                                                 
+                                                 rdfs:range xsd:dateTime .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#drawTime
+
+<http://api.gannett.com/ontologies/lottery#drawTime> rdf:type owl:DatatypeProperty ;
+                                                     
+                                                     rdfs:domain <http://api.gannett.com/ontologies/lottery#LotteryGame> ;
+                                                     
+                                                     rdfs:range xsd:time .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#gameId
+
+<http://api.gannett.com/ontologies/lottery#gameId> rdf:type owl:DatatypeProperty ;
+                                                   
+                                                   rdfs:domain <http://api.gannett.com/ontologies/lottery#LotteryGame> .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#quantity
+
+<http://api.gannett.com/ontologies/lottery#quantity> rdf:type owl:DatatypeProperty ;
+                                                     
+                                                     rdfs:domain <http://api.gannett.com/ontologies/lottery#LotteryQuantity> .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#stateId
+
+<http://api.gannett.com/ontologies/lottery#stateId> rdf:type owl:DatatypeProperty ;
+                                                    
+                                                    rdfs:domain <http://api.gannett.com/ontologies/lottery#LotteryState> .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#website
+
+<http://api.gannett.com/ontologies/lottery#website> rdf:type owl:DatatypeProperty ;
+                                                    
+                                                    rdfs:domain <http://api.gannett.com/ontologies/lottery#LotteryState> .
+
+
+
+###  http://schema.org/name
+
+<http://schema.org/name> rdf:type owl:DatatypeProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://api.gannett.com/ontologies/lottery#Jackpots
+
+<http://api.gannett.com/ontologies/lottery#Jackpots> rdf:type owl:Class ;
+                                                     
+                                                     rdfs:subClassOf <http://api.gannett.com/ontologies/lottery#LotteryThing> .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#LotteryCountry
+
+<http://api.gannett.com/ontologies/lottery#LotteryCountry> rdf:type owl:Class ;
+                                                           
+                                                           rdfs:subClassOf <http://api.gannett.com/ontologies/lottery#LotteryThing> ;
+                                                           
+                                                           rdfs:comment "A Country" .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#LotteryGame
+
+<http://api.gannett.com/ontologies/lottery#LotteryGame> rdf:type owl:Class ;
+                                                        
+                                                        rdfs:subClassOf <http://api.gannett.com/ontologies/lottery#LotteryThing> .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#LotteryJackpot
+
+<http://api.gannett.com/ontologies/lottery#LotteryJackpot> rdf:type owl:Class ;
+                                                           
+                                                           rdfs:subClassOf <http://api.gannett.com/ontologies/lottery#LotteryQuantity> .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#LotteryQuantity
+
+<http://api.gannett.com/ontologies/lottery#LotteryQuantity> rdf:type owl:Class ;
+                                                            
+                                                            rdfs:subClassOf <http://api.gannett.com/ontologies/lottery#LotteryThing> .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#LotteryResult
+
+<http://api.gannett.com/ontologies/lottery#LotteryResult> rdf:type owl:Class ;
+                                                          
+                                                          rdfs:subClassOf <http://api.gannett.com/ontologies/lottery#LotteryThing> .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#LotteryState
+
+<http://api.gannett.com/ontologies/lottery#LotteryState> rdf:type owl:Class ;
+                                                         
+                                                         rdfs:subClassOf <http://api.gannett.com/ontologies/lottery#LotteryThing> ;
+                                                         
+                                                         rdfs:comment "The state of a lottery" .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#LotteryThing
+
+<http://api.gannett.com/ontologies/lottery#LotteryThing> rdf:type owl:Class ;
+                                                         
+                                                         rdfs:subClassOf <http://schema.org/Thing> .
+
+
+
+###  http://schema.org/Thing
+
+<http://schema.org/Thing> rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://api.gannett.com/ontologies/lottery#country/u.s.a.
+
+<http://api.gannett.com/ontologies/lottery#country/u.s.a.> rdf:type <http://api.gannett.com/ontologies/lottery#LotteryCountry> ,
+                                                                    owl:NamedIndividual ;
+                                                           
+                                                           <http://schema.org/name> "U.S.A." .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#game/101
+
+<http://api.gannett.com/ontologies/lottery#game/101> rdf:type <http://api.gannett.com/ontologies/lottery#LotteryGame> ,
+                                                              owl:NamedIndividual ;
+                                                     
+                                                     <http://schema.org/name> "Powerball" ;
+                                                     
+                                                     <http://api.gannett.com/ontologies/lottery#drawTime> "22:59" ;
+                                                     
+                                                     <http://api.gannett.com/ontologies/lottery#gameId> "101" ;
+                                                     
+                                                     <http://api.gannett.com/ontologies/lottery#hasJackpots> <http://api.gannett.com/ontologies/lottery#game/101/jackpots> ;
+                                                     
+                                                     <http://api.gannett.com/ontologies/lottery#hasState> <http://api.gannett.com/ontologies/lottery#state/az> ;
+                                                     
+                                                     <http://api.gannett.com/ontologies/lottery#hasDrawDay> <http://purl.org/goodrelations/v1#Saturday> ,
+                                                                                                            <http://purl.org/goodrelations/v1#Wednesday> .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#game/101/jackpots
+
+<http://api.gannett.com/ontologies/lottery#game/101/jackpots> rdf:type <http://api.gannett.com/ontologies/lottery#Jackpots> ,
+                                                                       owl:NamedIndividual ;
+                                                              
+                                                              <http://purl.org/goodrelations/v1#hasPrevious> <http://api.gannett.com/ontologies/lottery#jackpot/101/2014-02-19> ;
+                                                              
+                                                              <http://purl.org/goodrelations/v1#hasNext> <http://api.gannett.com/ontologies/lottery#jackpot/101/2014-02-22> .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#jackpot/101/2014-02-19
+
+<http://api.gannett.com/ontologies/lottery#jackpot/101/2014-02-19> rdf:type <http://api.gannett.com/ontologies/lottery#LotteryJackpot> ,
+                                                                            owl:NamedIndividual ;
+                                                                   
+                                                                   <http://api.gannett.com/ontologies/lottery#quantity> "40000000" ;
+                                                                   
+                                                                   <http://schema.org/name> "$40 Million" .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#jackpot/101/2014-02-22
+
+<http://api.gannett.com/ontologies/lottery#jackpot/101/2014-02-22> rdf:type <http://api.gannett.com/ontologies/lottery#LotteryJackpot> ,
+                                                                            owl:NamedIndividual ;
+                                                                   
+                                                                   <http://api.gannett.com/ontologies/lottery#quantity> "400000000" ;
+                                                                   
+                                                                   <http://schema.org/name> "$400 Million" .
+
+
+
+###  http://api.gannett.com/ontologies/lottery#state/az
+
+<http://api.gannett.com/ontologies/lottery#state/az> rdf:type <http://api.gannett.com/ontologies/lottery#LotteryState> ,
+                                                              owl:NamedIndividual ;
+                                                     
+                                                     <http://api.gannett.com/ontologies/lottery#stateId> "AZ" ;
+                                                     
+                                                     <http://schema.org/name> "Arizona" ;
+                                                     
+                                                     <http://api.gannett.com/ontologies/lottery#website> "<http://www.arizonalottery.com/>" ;
+                                                     
+                                                     <http://api.gannett.com/ontologies/lottery#hasCountry> <http://api.gannett.com/ontologies/lottery#country/u.s.a.> .
+
+
+
+###  http://purl.org/goodrelations/v1#Friday
+
+<http://purl.org/goodrelations/v1#Friday> rdf:type owl:NamedIndividual .
+
+
+
+###  http://purl.org/goodrelations/v1#Monday
+
+<http://purl.org/goodrelations/v1#Monday> rdf:type owl:NamedIndividual .
+
+
+
+###  http://purl.org/goodrelations/v1#Saturday
+
+<http://purl.org/goodrelations/v1#Saturday> rdf:type owl:NamedIndividual .
+
+
+
+###  http://purl.org/goodrelations/v1#Sunday
+
+<http://purl.org/goodrelations/v1#Sunday> rdf:type owl:NamedIndividual .
+
+
+
+###  http://purl.org/goodrelations/v1#Thursday
+
+<http://purl.org/goodrelations/v1#Thursday> rdf:type owl:NamedIndividual .
+
+
+
+###  http://purl.org/goodrelations/v1#Tuesday
+
+<http://purl.org/goodrelations/v1#Tuesday> rdf:type owl:NamedIndividual .
+
+
+
+###  http://purl.org/goodrelations/v1#Wednesday
+
+<http://purl.org/goodrelations/v1#Wednesday> rdf:type owl:NamedIndividual .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+
