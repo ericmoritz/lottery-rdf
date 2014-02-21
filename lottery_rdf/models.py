@@ -5,9 +5,10 @@ in memory database.
 I first convert the lottery data into RDF statements
 then store those into an in-memory database
 """
-from dateutil.parser import parse as parse_date
+from dateutil.parser import parse as parse_date_date_util
 from dateutil import tz
 import requests
+import isodate
 from lxml import etree
 from time import time
 from datetime import datetime, time as dtime
@@ -234,26 +235,26 @@ def _day_iri(day):
 
 
 def _doc_iri(iri):
-    return URIRef(u"#" + quote(iri))
+    return URIRef(u"#com.lottostrategies-" + quote(iri))
 
 
 def _state_iri(state_id):
-    return _doc_iri(u"state/{0}".format(state_id.lower()))
+    return _doc_iri(u"state-{0}".format(state_id.lower()))
 
 
 def _country_iri(country_name):
-    return _doc_iri(u"country/{0}".format(country_name.lower()))
+    return _doc_iri(u"country-{0}".format(country_name.lower()))
 
 
 def _game_iri(gameId):
-    return _doc_iri(u"game/com.lottostrategies/{0}".format(gameId.lower()))
+    return _doc_iri(u"game-{0}".format(gameId.lower()))
 
 def _jackpots_iri(gameId):
-    return _doc_iri(u"game/com.lottostrategies/{0}/jackpots".format(gameId.lower()))
+    return _doc_iri(u"game-{0}-jackpots".format(gameId.lower()))
 
 def _jackpot_iri(game_id, isodate):
     return _doc_iri(
-        u'game/com.lottostrategies/{game_id}/jackpot/{isodate}'.format(
+        u'game-{game_id}-jackpot-{isodate}'.format(
             game_id=game_id.lower(),
             isodate=isodate,
         )
@@ -350,7 +351,7 @@ def _jackpots_graph(graph, xml_src):
                     if el is not None:
                         prefix = "next_" if prop is hasNext else "last_"
                         dateText = _extract_text(el, "{prefix}jp_date/{prefix}full_date".format(prefix=prefix))
-                        dateStr = parse_date(dateText).isoformat()
+                        dateStr = _iso(parse_date(dateText))
 
                         jackpot_iri = _jackpot_iri(game_id, dateStr)
 
@@ -382,8 +383,8 @@ def _result_graph(graph, xml_src):
         for game_el in state_el.iterfind("game_results"):
             game_id = game_el.attrib['game_id'].lower()
             if game_id not in seen_games:
-                update_time = parse_date(game_el.attrib['update_time']).isoformat()
-                draw_date = parse_date(_extract_text(game_el, "draw_date/full_date")).isoformat()
+                update_time = _iso(parse_date(game_el.attrib['update_time']))
+                draw_date = _iso(parse_date(_extract_text(game_el, "draw_date/full_date")))
                 numbers = ",".join((n.text
                                     for n in game_el.iterfind("numbers/number")))
 
@@ -406,6 +407,14 @@ def _result_graph(graph, xml_src):
                 seen_games.add(game_id)
 
     return relation
+
+
+def _iso(dt):
+    return isodate.datetime_isoformat(dt)
+
+
+def parse_date(dtstr):
+    return parse_date_date_util(dtstr).replace(tzinfo=est)
 
 
 ###===================================================================
