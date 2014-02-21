@@ -1,6 +1,6 @@
 .PHONY: all clean deps
 
-all: test dist/lottery.n3.txt
+all: test dist/lottery.rdf.xml
 
 dev: 
 	python setup.py develop
@@ -11,6 +11,6 @@ clean:
 test:
 	py.test --flakes lottery_rdf/
 
-dist/lottery.n3.txt:
+dist/lottery.rdf.xml:
 	mkdir -p dist/
-	python bin/dump.py dist/lottery.n3.txt $(LOTTERY_IRL)
+	python bin/dump.py dist/lottery.rdf.xml

@@ -37,7 +37,7 @@ def dump(config, filename):
     triples = load_graph(config)
     g = _rdflib_import(Graph(), triples)
     with open(filename, "w") as f:
-        f.write(g.serialize(format="n3"))
+        f.write(g.serialize())
 
 
 def _download_all(apiNS):
