@@ -1,0 +1,4076 @@
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix lottery: <http://api.gannett.com/ontologies/lottery#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<#game/com.lottostrategies/101> lottery:drawTime "2259" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/101/jackpots> ;
+    lottery:hasState <#state/ar>,
+        <#state/az>,
+        <#state/ca>,
+        <#state/co>,
+        <#state/ct>,
+        <#state/dc>,
+        <#state/de>,
+        <#state/fl>,
+        <#state/ga>,
+        <#state/ia>,
+        <#state/id>,
+        <#state/il>,
+        <#state/in>,
+        <#state/ks>,
+        <#state/ky>,
+        <#state/la>,
+        <#state/ma>,
+        <#state/md>,
+        <#state/me>,
+        <#state/mi>,
+        <#state/mn>,
+        <#state/mo>,
+        <#state/mt>,
+        <#state/nc>,
+        <#state/nd>,
+        <#state/ne>,
+        <#state/nh>,
+        <#state/nj>,
+        <#state/nm>,
+        <#state/ny>,
+        <#state/oh>,
+        <#state/ok>,
+        <#state/or>,
+        <#state/pa>,
+        <#state/ri>,
+        <#state/sc>,
+        <#state/sd>,
+        <#state/tn>,
+        <#state/tx>,
+        <#state/va>,
+        <#state/vt>,
+        <#state/wa>,
+        <#state/wi>,
+        <#state/wv> ;
+    gr:hasNext <#game/com.lottostrategies/101/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/101/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Powerball" .
+
+<#game/com.lottostrategies/104> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/104/jackpots> ;
+    lottery:hasState <#state/id>,
+        <#state/mt>,
+        <#state/nd>,
+        <#state/sd> ;
+    gr:hasNext <#game/com.lottostrategies/104/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/104/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Wild Card" .
+
+<#game/com.lottostrategies/109> lottery:drawTime "1850" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/me>,
+        <#state/nh>,
+        <#state/vt> ;
+    schema:name "Pick 3 Evening" .
+
+<#game/com.lottostrategies/110> lottery:drawTime "1850" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/me>,
+        <#state/nh>,
+        <#state/vt> ;
+    schema:name "Pick 4 Evening" .
+
+<#game/com.lottostrategies/112> lottery:drawTime "2240" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/112/jackpots> ;
+    lottery:hasState <#state/dc>,
+        <#state/de>,
+        <#state/ia>,
+        <#state/id>,
+        <#state/ks>,
+        <#state/me>,
+        <#state/mn>,
+        <#state/mt>,
+        <#state/nd>,
+        <#state/nh>,
+        <#state/nm>,
+        <#state/ok>,
+        <#state/sd>,
+        <#state/tn>,
+        <#state/vt>,
+        <#state/wv> ;
+    gr:hasNext <#game/com.lottostrategies/112/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/112/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Hot Lotto" .
+
+<#game/com.lottostrategies/113> lottery:drawTime "2259" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Tuesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/113/jackpots> ;
+    lottery:hasState <#state/ar>,
+        <#state/az>,
+        <#state/ca>,
+        <#state/co>,
+        <#state/ct>,
+        <#state/dc>,
+        <#state/de>,
+        <#state/fl>,
+        <#state/ga>,
+        <#state/ia>,
+        <#state/id>,
+        <#state/il>,
+        <#state/in>,
+        <#state/ks>,
+        <#state/ky>,
+        <#state/la>,
+        <#state/ma>,
+        <#state/md>,
+        <#state/me>,
+        <#state/mi>,
+        <#state/mn>,
+        <#state/mo>,
+        <#state/mt>,
+        <#state/nc>,
+        <#state/nd>,
+        <#state/ne>,
+        <#state/nh>,
+        <#state/nj>,
+        <#state/nm>,
+        <#state/ny>,
+        <#state/oh>,
+        <#state/ok>,
+        <#state/or>,
+        <#state/pa>,
+        <#state/ri>,
+        <#state/sc>,
+        <#state/sd>,
+        <#state/tn>,
+        <#state/tx>,
+        <#state/va>,
+        <#state/vt>,
+        <#state/wa>,
+        <#state/wi>,
+        <#state/wv> ;
+    gr:hasNext <#game/com.lottostrategies/113/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/113/jackpot/2014-02-18T00%3A00%3A00> ;
+    schema:name "MEGA Millions" .
+
+<#game/com.lottostrategies/114> lottery:drawTime "2230" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ks>,
+        <#state/nd>,
+        <#state/ne> ;
+    schema:name "2 By 2" .
+
+<#game/com.lottostrategies/115> lottery:drawTime "1300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/me>,
+        <#state/nh>,
+        <#state/vt> ;
+    schema:name "Pick 3 Day" .
+
+<#game/com.lottostrategies/116> lottery:drawTime "1300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/me>,
+        <#state/nh>,
+        <#state/vt> ;
+    schema:name "Pick 4 Day" .
+
+<#game/com.lottostrategies/120> lottery:drawTime "1340" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ia>,
+        <#state/il> ;
+    schema:name "Pick 3 Midday" .
+
+<#game/com.lottostrategies/121> lottery:drawTime "2222" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ia>,
+        <#state/il> ;
+    schema:name "Pick 3 Evening" .
+
+<#game/com.lottostrategies/122> lottery:drawTime "1340" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ia>,
+        <#state/il> ;
+    schema:name "Pick 4 Midday" .
+
+<#game/com.lottostrategies/123> lottery:drawTime "2222" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ia>,
+        <#state/il> ;
+    schema:name "Pick 4 Evening" .
+
+<#game/com.lottostrategies/125> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ga>,
+        <#state/va> ;
+    schema:name "Win For Life" .
+
+<#game/com.lottostrategies/128> lottery:drawTime "1959" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/128/jackpots> ;
+    lottery:hasState <#state/me>,
+        <#state/nh>,
+        <#state/vt> ;
+    gr:hasNext <#game/com.lottostrategies/128/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/128/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Megabucks Plus" .
+
+<#game/com.lottostrategies/129> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Monday,
+        gr:Thursday ;
+    lottery:hasState <#state/ar>,
+        <#state/ga>,
+        <#state/ky>,
+        <#state/va> ;
+    schema:name "Decades of Dollars" .
+
+<#game/com.lottostrategies/132> lottery:drawTime "2238" ;
+    lottery:hasDrawDay gr:Monday,
+        gr:Thursday ;
+    lottery:hasState <#state/ct>,
+        <#state/ma>,
+        <#state/me>,
+        <#state/nh>,
+        <#state/ri>,
+        <#state/vt> ;
+    schema:name "Lucky For Life" .
+
+<#game/com.lottostrategies/133> lottery:drawTime "1859" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Wednesday ;
+    lottery:hasState <#state/me>,
+        <#state/nh>,
+        <#state/vt> ;
+    schema:name "Gimme 5" .
+
+<#game/com.lottostrategies/141> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Tuesday ;
+    lottery:hasState <#state/ar>,
+        <#state/az>,
+        <#state/co>,
+        <#state/ct>,
+        <#state/dc>,
+        <#state/de>,
+        <#state/fl>,
+        <#state/ia>,
+        <#state/id>,
+        <#state/il>,
+        <#state/in>,
+        <#state/ks>,
+        <#state/ky>,
+        <#state/la>,
+        <#state/ma>,
+        <#state/md>,
+        <#state/me>,
+        <#state/mn>,
+        <#state/mo>,
+        <#state/mt>,
+        <#state/nc>,
+        <#state/nd>,
+        <#state/ne>,
+        <#state/nh>,
+        <#state/nm>,
+        <#state/ny>,
+        <#state/oh>,
+        <#state/ok>,
+        <#state/or>,
+        <#state/pa>,
+        <#state/ri>,
+        <#state/sc>,
+        <#state/sd>,
+        <#state/tn>,
+        <#state/tx>,
+        <#state/vt>,
+        <#state/wi>,
+        <#state/wv> ;
+    schema:name "Megaplier" .
+
+<#game/com.lottostrategies/201> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/201/jackpots> ;
+    lottery:hasState <#state/ac>,
+        <#state/bc>,
+        <#state/on>,
+        <#state/qc>,
+        <#state/wc> ;
+    gr:hasNext <#game/com.lottostrategies/201/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/201/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Lotto 6/49" .
+
+<#game/com.lottostrategies/203> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday ;
+    lottery:hasJackpots <#game/com.lottostrategies/203/jackpots> ;
+    lottery:hasState <#state/ac>,
+        <#state/bc>,
+        <#state/on>,
+        <#state/qc>,
+        <#state/wc> ;
+    gr:hasNext <#game/com.lottostrategies/203/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/203/jackpot/2014-02-14T00%3A00%3A00> ;
+    schema:name "Lotto Max" .
+
+<#game/com.lottostrategies/204> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday ;
+    schema:name "MaxMillions" .
+
+<#game/com.lottostrategies/205> lottery:drawTime "2100" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ac>,
+        <#state/bc>,
+        <#state/on>,
+        <#state/qc>,
+        <#state/wc> ;
+    schema:name "Guaranteed Million Draw" .
+
+<#game/com.lottostrategies/801> lottery:drawTime "1530" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Tuesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/801/jackpots> ;
+    lottery:hasState <#state/ie>,
+        <#state/uk> ;
+    gr:hasNext <#game/com.lottostrategies/801/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/801/jackpot/2014-02-18T00%3A00%3A00> ;
+    schema:name "EuroMillions" .
+
+<#game/com.lottostrategies/ac2> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ac> ;
+    schema:name "Keno Atlantic" .
+
+<#game/com.lottostrategies/ac3> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ac> ;
+    schema:name "Tag" .
+
+<#game/com.lottostrategies/ac5> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ac> ;
+    schema:name "Pik-4" .
+
+<#game/com.lottostrategies/ac6> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ac> ;
+    schema:name "Atlantic 6/49" .
+
+<#game/com.lottostrategies/ac8> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ac> ;
+    schema:name "Bucko" .
+
+<#game/com.lottostrategies/ac9> lottery:drawTime "2100" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ac> ;
+    schema:name "Salso Bingo" .
+
+<#game/com.lottostrategies/acs> lottery:drawTime "2000" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ac> ;
+    schema:name "Shabam" .
+
+<#game/com.lottostrategies/ar1> lottery:drawTime "2100" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/ar1/jackpots> ;
+    lottery:hasState <#state/ar> ;
+    gr:hasNext <#game/com.lottostrategies/ar1/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/ar1/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Natural State Jackpot" .
+
+<#game/com.lottostrategies/ara> lottery:drawTime "2000" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ar> ;
+    schema:name "Cash 3 Evening" .
+
+<#game/com.lottostrategies/arb> lottery:drawTime "1400" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ar> ;
+    schema:name "Cash 3 Midday" .
+
+<#game/com.lottostrategies/arc> lottery:drawTime "2000" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ar> ;
+    schema:name "Cash 4 Evening" .
+
+<#game/com.lottostrategies/ard> lottery:drawTime "1400" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ar> ;
+    schema:name "Cash 4 Midday" .
+
+<#game/com.lottostrategies/az2> lottery:drawTime "2325" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/az2/jackpots> ;
+    lottery:hasState <#state/az> ;
+    gr:hasNext <#game/com.lottostrategies/az2/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/az2/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Fantasy 5" .
+
+<#game/com.lottostrategies/az3> lottery:drawTime "2325" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/az3/jackpots> ;
+    lottery:hasState <#state/az> ;
+    gr:hasNext <#game/com.lottostrategies/az3/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/az3/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "The Pick" .
+
+<#game/com.lottostrategies/az5> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/az> ;
+    schema:name "2 BY 2" .
+
+<#game/com.lottostrategies/az6> lottery:drawTime "2325" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Tuesday ;
+    lottery:hasState <#state/az> ;
+    schema:name "Weekly Winnings" .
+
+<#game/com.lottostrategies/aza> lottery:drawTime "2325" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/az> ;
+    schema:name "Pick 3" .
+
+<#game/com.lottostrategies/bc1> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/bc> ;
+    schema:name "BC 49" .
+
+<#game/com.lottostrategies/bc2> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/bc> ;
+    schema:name "Extra" .
+
+<#game/com.lottostrategies/ca1> lottery:drawTime "2257" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/ca1/jackpots> ;
+    lottery:hasState <#state/ca> ;
+    gr:hasNext <#game/com.lottostrategies/ca1/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/ca1/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "SuperLotto Plus" .
+
+<#game/com.lottostrategies/ca2> lottery:drawTime "2140" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/ca2/jackpots> ;
+    lottery:hasState <#state/ca> ;
+    gr:hasNext <#game/com.lottostrategies/ca2/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/ca2/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Fantasy 5" .
+
+<#game/com.lottostrategies/ca3> lottery:drawTime "2135" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/ca3/jackpots> ;
+    lottery:hasState <#state/ca> ;
+    gr:hasNext <#game/com.lottostrategies/ca3/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/ca3/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Daily Derby" .
+
+<#game/com.lottostrategies/caa> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ca> ;
+    schema:name "Daily 3 Evening" .
+
+<#game/com.lottostrategies/cab> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ca> ;
+    schema:name "Daily 4" .
+
+<#game/com.lottostrategies/cac> lottery:drawTime "1600" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ca> ;
+    schema:name "Daily 3 Midday" .
+
+<#game/com.lottostrategies/co1> lottery:drawTime "2135" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/co1/jackpots> ;
+    lottery:hasState <#state/co> ;
+    gr:hasNext <#game/com.lottostrategies/co1/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/co1/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Lotto" .
+
+<#game/com.lottostrategies/co2> lottery:drawTime "2135" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/co2/jackpots> ;
+    lottery:hasState <#state/co> ;
+    gr:hasNext <#game/com.lottostrategies/co2/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/co2/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Cash 5" .
+
+<#game/com.lottostrategies/coa> lottery:drawTime "2136" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/co> ;
+    schema:name "Pick 3" .
+
+<#game/com.lottostrategies/ct1> lottery:drawTime "2238" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Tuesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/ct1/jackpots> ;
+    lottery:hasState <#state/ct> ;
+    gr:hasNext <#game/com.lottostrategies/ct1/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/ct1/jackpot/2014-02-18T00%3A00%3A00> ;
+    schema:name "Lotto" .
+
+<#game/com.lottostrategies/ct2> lottery:drawTime "2229" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ct> ;
+    schema:name "Cash 5" .
+
+<#game/com.lottostrategies/cta> lottery:drawTime "1357" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ct> ;
+    schema:name "Play3 Day" .
+
+<#game/com.lottostrategies/ctb> lottery:drawTime "2229" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ct> ;
+    schema:name "Play3 Night" .
+
+<#game/com.lottostrategies/ctc> lottery:drawTime "1357" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ct> ;
+    schema:name "Play4 Day" .
+
+<#game/com.lottostrategies/ctd> lottery:drawTime "2229" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ct> ;
+    schema:name "Play4 Night" .
+
+<#game/com.lottostrategies/dca> lottery:drawTime "1414" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/dc> ;
+    schema:name "DC 3 Midday" .
+
+<#game/com.lottostrategies/dcb> lottery:drawTime "2015" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/dc> ;
+    schema:name "DC 3 Evening" .
+
+<#game/com.lottostrategies/dcc> lottery:drawTime "1414" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/dc> ;
+    schema:name "DC 4 Midday" .
+
+<#game/com.lottostrategies/dcd> lottery:drawTime "2015" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/dc> ;
+    schema:name "DC 4 Evening" .
+
+<#game/com.lottostrategies/dce> lottery:drawTime "1430" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/dc> ;
+    schema:name "DC 5 Midday" .
+
+<#game/com.lottostrategies/dcf> lottery:drawTime "2015" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/dc> ;
+    schema:name "DC 5 Evening" .
+
+<#game/com.lottostrategies/de2> lottery:drawTime "1957" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/de2/jackpots> ;
+    lottery:hasState <#state/de> ;
+    gr:hasNext <#game/com.lottostrategies/de2/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/de2/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Multi-Win Lotto" .
+
+<#game/com.lottostrategies/de3> lottery:drawTime "2000" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Tuesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/de3/jackpots> ;
+    lottery:hasState <#state/de> ;
+    gr:hasNext <#game/com.lottostrategies/de3/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/de3/jackpot/2014-02-18T00%3A00%3A00> ;
+    schema:name "Cash 5" .
+
+<#game/com.lottostrategies/dea> lottery:drawTime "1358" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/de> ;
+    schema:name "Play 3 Day" .
+
+<#game/com.lottostrategies/deb> lottery:drawTime "1957" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/de> ;
+    schema:name "Play 3 Night" .
+
+<#game/com.lottostrategies/dec> lottery:drawTime "1358" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/de> ;
+    schema:name "Play 4 Day" .
+
+<#game/com.lottostrategies/ded> lottery:drawTime "1957" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/de> ;
+    schema:name "Play 4 Night" .
+
+<#game/com.lottostrategies/fl0> lottery:drawTime "2315" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/fl> ;
+    schema:name "Lotto XTRA" .
+
+<#game/com.lottostrategies/fl1> lottery:drawTime "2315" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/fl1/jackpots> ;
+    lottery:hasState <#state/fl> ;
+    gr:hasNext <#game/com.lottostrategies/fl1/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/fl1/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Lotto with XTRA" .
+
+<#game/com.lottostrategies/fl3> lottery:drawTime "2315" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/fl> ;
+    schema:name "Fantasy 5" .
+
+<#game/com.lottostrategies/fl4> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Tuesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/fl4/jackpots> ;
+    lottery:hasState <#state/fl> ;
+    gr:hasNext <#game/com.lottostrategies/fl4/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/fl4/jackpot/2014-02-18T00%3A00%3A00> ;
+    schema:name "Mega Money" .
+
+<#game/com.lottostrategies/fla> lottery:drawTime "1957" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/fl> ;
+    schema:name "Cash 3 Evening" .
+
+<#game/com.lottostrategies/flb> lottery:drawTime "1957" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/fl> ;
+    schema:name "Play 4 Evening" .
+
+<#game/com.lottostrategies/flc> lottery:drawTime "1330" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/fl> ;
+    schema:name "Cash 3 Midday" .
+
+<#game/com.lottostrategies/fld> lottery:drawTime "1330" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/fl> ;
+    schema:name "Play 4 Midday" .
+
+<#game/com.lottostrategies/ga1> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Saturday ;
+    schema:name "Lotto" .
+
+<#game/com.lottostrategies/ga2> lottery:drawTime "2330" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/ga2/jackpots> ;
+    lottery:hasState <#state/ga> ;
+    gr:hasNext <#game/com.lottostrategies/ga2/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/ga2/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Fantasy 5" .
+
+<#game/com.lottostrategies/gaa> lottery:drawTime "1229" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ga> ;
+    schema:name "Cash 3 Midday" .
+
+<#game/com.lottostrategies/gab> lottery:drawTime "1859" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ga> ;
+    schema:name "Cash 3 Evening" .
+
+<#game/com.lottostrategies/gac> lottery:drawTime "1229" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ga> ;
+    schema:name "Cash 4 Midday" .
+
+<#game/com.lottostrategies/gad> lottery:drawTime "2330" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ga> ;
+    schema:name "Cash 4 Evening" .
+
+<#game/com.lottostrategies/gae> lottery:drawTime "1230" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ga> ;
+    schema:name "Georgia FIVE Midday" .
+
+<#game/com.lottostrategies/gaf> lottery:drawTime "1900" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ga> ;
+    schema:name "Georgia FIVE Evening" .
+
+<#game/com.lottostrategies/ia3> lottery:drawTime "1345" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ia> ;
+    schema:name "All or Nothing Midday" .
+
+<#game/com.lottostrategies/ia4> lottery:drawTime "2145" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ia> ;
+    schema:name "All or Nothing Evening" .
+
+<#game/com.lottostrategies/iaa> lottery:drawTime "2220" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    schema:name "Pick 3" .
+
+<#game/com.lottostrategies/id3> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/id> ;
+    schema:name "Weekly Grand" .
+
+<#game/com.lottostrategies/ida> lottery:drawTime "2159" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/id> ;
+    schema:name "Pick 3 Night" .
+
+<#game/com.lottostrategies/idb> lottery:drawTime "1600" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/id> ;
+    schema:name "Pick 3 Day" .
+
+<#game/com.lottostrategies/ie0> lottery:drawTime "1600" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/ie0/jackpots> ;
+    lottery:hasState <#state/ie> ;
+    gr:hasNext <#game/com.lottostrategies/ie0/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/ie0/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Lotto" .
+
+<#game/com.lottostrategies/ie1> lottery:drawTime "1600" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ie> ;
+    schema:name "Lotto Plus 1" .
+
+<#game/com.lottostrategies/ie2> lottery:drawTime "1600" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ie> ;
+    schema:name "Lotto Plus 2" .
+
+<#game/com.lottostrategies/iep> lottery:drawTime "1600" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Tuesday ;
+    lottery:hasState <#state/ie> ;
+    schema:name "EuroMillion Plus" .
+
+<#game/com.lottostrategies/il3> lottery:drawTime "2222" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/il3/jackpots> ;
+    lottery:hasState <#state/il> ;
+    gr:hasNext <#game/com.lottostrategies/il3/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/il3/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "LuckyDay Lotto Evening" .
+
+<#game/com.lottostrategies/il4> lottery:drawTime "2222" ;
+    lottery:hasDrawDay gr:Monday,
+        gr:Saturday,
+        gr:Thursday ;
+    lottery:hasJackpots <#game/com.lottostrategies/il4/jackpots> ;
+    lottery:hasState <#state/il> ;
+    gr:hasNext <#game/com.lottostrategies/il4/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/il4/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Lotto" .
+
+<#game/com.lottostrategies/il5> lottery:drawTime "1340" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/il5/jackpots> ;
+    lottery:hasState <#state/il> ;
+    gr:hasNext <#game/com.lottostrategies/il5/jackpot/2013-08-11T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/il5/jackpot/2013-08-10T00%3A00%3A00> ;
+    schema:name "LuckyDay Lotto Midday" .
+
+<#game/com.lottostrategies/ile> lottery:drawTime "1130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/il> ;
+    schema:name "My 3 Midday" .
+
+<#game/com.lottostrategies/ilf> lottery:drawTime "1930" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/il> ;
+    schema:name "My 3 Evening" .
+
+<#game/com.lottostrategies/ilg> lottery:drawTime "1340" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/il> ;
+    schema:name "Midday 3 Fireball" .
+
+<#game/com.lottostrategies/ilh> lottery:drawTime "2222" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/il> ;
+    schema:name "Evening 3 Fireball" .
+
+<#game/com.lottostrategies/ili> lottery:drawTime "1340" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/il> ;
+    schema:name "Midday 4 Fireball" .
+
+<#game/com.lottostrategies/ilj> lottery:drawTime "2222" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/il> ;
+    schema:name "Evening 4 Fireball" .
+
+<#game/com.lottostrategies/ilw> lottery:drawTime "1130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/il> ;
+    schema:name "Hit or Miss Morning" .
+
+<#game/com.lottostrategies/ilx> lottery:drawTime "1340" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/il> ;
+    schema:name "Hit or Miss Midday" .
+
+<#game/com.lottostrategies/ily> lottery:drawTime "1930" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/il> ;
+    schema:name "Hit or Miss Drive" .
+
+<#game/com.lottostrategies/ilz> lottery:drawTime "2122" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/il> ;
+    schema:name "Hit or Miss Evening" .
+
+<#game/com.lottostrategies/in1> lottery:drawTime "2250" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/in1/jackpots> ;
+    lottery:hasState <#state/in> ;
+    gr:hasNext <#game/com.lottostrategies/in1/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/in1/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Hoosier Lotto" .
+
+<#game/com.lottostrategies/in6> lottery:drawTime "2250" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Tuesday ;
+    lottery:hasState <#state/in> ;
+    schema:name "Mix and Match" .
+
+<#game/com.lottostrategies/in7> lottery:drawTime "2240" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/in> ;
+    schema:name "Quick Draw" .
+
+<#game/com.lottostrategies/in8> lottery:drawTime "2250" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/in8/jackpots> ;
+    lottery:hasState <#state/in> ;
+    gr:hasNext <#game/com.lottostrategies/in8/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/in8/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Cash 5" .
+
+<#game/com.lottostrategies/ina> lottery:drawTime "1320" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/in> ;
+    schema:name "Daily 3 Midday" .
+
+<#game/com.lottostrategies/inb> lottery:drawTime "2250" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/in> ;
+    schema:name "Daily 3 Evening" .
+
+<#game/com.lottostrategies/inc> lottery:drawTime "1320" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/in> ;
+    schema:name "Daily 4 Midday" .
+
+<#game/com.lottostrategies/ind> lottery:drawTime "2250" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/in> ;
+    schema:name "Daily 4 Evening" .
+
+<#game/com.lottostrategies/inp> lottery:drawTime "2250" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/in> ;
+    schema:name "Poker Lotto" .
+
+<#game/com.lottostrategies/ks3> lottery:drawTime "2210" ;
+    lottery:hasDrawDay gr:Monday,
+        gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/ks3/jackpots> ;
+    lottery:hasState <#state/ks> ;
+    gr:hasNext <#game/com.lottostrategies/ks3/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/ks3/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Super Cash" .
+
+<#game/com.lottostrategies/ksa> lottery:drawTime "2210" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ks> ;
+    schema:name "Pick 3" .
+
+<#game/com.lottostrategies/ky1> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ky> ;
+    schema:name "Cash Ball" .
+
+<#game/com.lottostrategies/kya> lottery:drawTime "1325" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ky> ;
+    schema:name "Pick 3 Midday" .
+
+<#game/com.lottostrategies/kyb> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ky> ;
+    schema:name "Pick 3 Evening" .
+
+<#game/com.lottostrategies/kyc> lottery:drawTime "1325" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ky> ;
+    schema:name "Pick 4 Midday" .
+
+<#game/com.lottostrategies/kyd> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ky> ;
+    schema:name "Pick 4 Evening" .
+
+<#game/com.lottostrategies/kye> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ky> ;
+    schema:name "Cash Ball Kicker" .
+
+<#game/com.lottostrategies/kyf> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ky> ;
+    schema:name "5 Card Cash" .
+
+<#game/com.lottostrategies/la1> lottery:drawTime "2230" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/la1/jackpots> ;
+    lottery:hasState <#state/la> ;
+    gr:hasNext <#game/com.lottostrategies/la1/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/la1/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Lotto" .
+
+<#game/com.lottostrategies/la5> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/la5/jackpots> ;
+    lottery:hasState <#state/la> ;
+    gr:hasNext <#game/com.lottostrategies/la5/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/la5/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Easy 5" .
+
+<#game/com.lottostrategies/laa> lottery:drawTime "2230" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/la> ;
+    schema:name "Pick 3" .
+
+<#game/com.lottostrategies/lab> lottery:drawTime "2230" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/la> ;
+    schema:name "Pick 4" .
+
+<#game/com.lottostrategies/ma2> lottery:drawTime "2320" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/ma2/jackpots> ;
+    lottery:hasState <#state/ma> ;
+    gr:hasNext <#game/com.lottostrategies/ma2/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/ma2/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Megabucks Doubler" .
+
+<#game/com.lottostrategies/ma3> lottery:drawTime "2320" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ma> ;
+    schema:name "MassCash" .
+
+<#game/com.lottostrategies/maa> lottery:drawTime "1245" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ma> ;
+    schema:name "Numbers Midday" .
+
+<#game/com.lottostrategies/mac> lottery:drawTime "1957" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ma> ;
+    schema:name "Numbers Evening" .
+
+<#game/com.lottostrategies/md3> lottery:drawTime "2000" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/md> ;
+    schema:name "Bonus Match 5" .
+
+<#game/com.lottostrategies/md4> lottery:drawTime "2307" ;
+    lottery:hasDrawDay gr:Monday,
+        gr:Thursday ;
+    lottery:hasJackpots <#game/com.lottostrategies/md4/jackpots> ;
+    lottery:hasState <#state/md> ;
+    gr:hasNext <#game/com.lottostrategies/md4/jackpot/2014-02-24T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/md4/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "MultiMatch" .
+
+<#game/com.lottostrategies/md5> lottery:drawTime "2000" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/md> ;
+    schema:name "5 Card Cash" .
+
+<#game/com.lottostrategies/mda> lottery:drawTime "1230" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/md> ;
+    schema:name "Pick 3 Midday" .
+
+<#game/com.lottostrategies/mdb> lottery:drawTime "2000" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/md> ;
+    schema:name "Pick 3 Evening" .
+
+<#game/com.lottostrategies/mdc> lottery:drawTime "1230" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/md> ;
+    schema:name "Pick 4 Midday" .
+
+<#game/com.lottostrategies/mdd> lottery:drawTime "2000" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/md> ;
+    schema:name "Pick 4 Evening" .
+
+<#game/com.lottostrategies/mi3> lottery:drawTime "1929" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/mi> ;
+    schema:name "Keno" .
+
+<#game/com.lottostrategies/mi6> lottery:drawTime "1929" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/mi6/jackpots> ;
+    lottery:hasState <#state/mi> ;
+    gr:hasNext <#game/com.lottostrategies/mi6/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/mi6/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Fantasy 5" .
+
+<#game/com.lottostrategies/mi7> lottery:drawTime "1929" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/mi7/jackpots> ;
+    lottery:hasState <#state/mi> ;
+    gr:hasNext <#game/com.lottostrategies/mi7/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/mi7/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Classic Lotto 47" .
+
+<#game/com.lottostrategies/mia> lottery:drawTime "1300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/mi> ;
+    schema:name "Daily 3 Midday" .
+
+<#game/com.lottostrategies/mib> lottery:drawTime "1929" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/mi> ;
+    schema:name "Daily 3 Evening" .
+
+<#game/com.lottostrategies/mic> lottery:drawTime "1300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/mi> ;
+    schema:name "Daily 4 Midday" .
+
+<#game/com.lottostrategies/mid> lottery:drawTime "1929" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/mi> ;
+    schema:name "Daily 4 Evening" .
+
+<#game/com.lottostrategies/mip> lottery:drawTime "2100" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/mi> ;
+    schema:name "Poker Lotto" .
+
+<#game/com.lottostrategies/mn2> lottery:drawTime "1930" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/mn2/jackpots> ;
+    lottery:hasState <#state/mn> ;
+    gr:hasNext <#game/com.lottostrategies/mn2/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/mn2/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Northstar Cash" .
+
+<#game/com.lottostrategies/mn3> lottery:drawTime "1930" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/mn3/jackpots> ;
+    lottery:hasState <#state/mn> ;
+    gr:hasNext <#game/com.lottostrategies/mn3/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/mn3/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Gopher 5" .
+
+<#game/com.lottostrategies/mna> lottery:drawTime "1930" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/mn> ;
+    schema:name "Daily 3" .
+
+<#game/com.lottostrategies/mo1> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/mo1/jackpots> ;
+    lottery:hasState <#state/mo> ;
+    gr:hasNext <#game/com.lottostrategies/mo1/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/mo1/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Lotto" .
+
+<#game/com.lottostrategies/mo4> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/mo4/jackpots> ;
+    lottery:hasState <#state/mo> ;
+    gr:hasNext <#game/com.lottostrategies/mo4/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/mo4/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Show Me Cash" .
+
+<#game/com.lottostrategies/moa> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/mo> ;
+    schema:name "Pick 3 Evening" .
+
+<#game/com.lottostrategies/mob> lottery:drawTime "1345" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/mo> ;
+    schema:name "Pick 3 Midday" .
+
+<#game/com.lottostrategies/moc> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/mo> ;
+    schema:name "Pick 4 Evening" .
+
+<#game/com.lottostrategies/mod> lottery:drawTime "1345" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/mo> ;
+    schema:name "Pick 4 Midday" .
+
+<#game/com.lottostrategies/mt1> lottery:drawTime "2230" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/mt1/jackpots> ;
+    lottery:hasState <#state/mt> ;
+    gr:hasNext <#game/com.lottostrategies/mt1/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/mt1/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Montana Cash" .
+
+<#game/com.lottostrategies/mt2> lottery:drawTime "1430" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/mt> ;
+    schema:name "10 Spot Midday" .
+
+<#game/com.lottostrategies/mt3> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/mt> ;
+    schema:name "10 Spot Evening" .
+
+<#game/com.lottostrategies/nc1> lottery:drawTime "2322" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/nc1/jackpots> ;
+    lottery:hasState <#state/nc> ;
+    gr:hasNext <#game/com.lottostrategies/nc1/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/nc1/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Cash 5" .
+
+<#game/com.lottostrategies/nca> lottery:drawTime "2322" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/nc> ;
+    schema:name "Pick 3 Evening" .
+
+<#game/com.lottostrategies/ncb> lottery:drawTime "1500" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/nc> ;
+    schema:name "Pick 3 Day" .
+
+<#game/com.lottostrategies/ncc> lottery:drawTime "2322" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/nc> ;
+    schema:name "Pick 4 Evening" .
+
+<#game/com.lottostrategies/ncd> lottery:drawTime "1500" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/nc> ;
+    schema:name "Pick 4 Day" .
+
+<#game/com.lottostrategies/ne1> lottery:drawTime "2230" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/ne1/jackpots> ;
+    lottery:hasState <#state/ne> ;
+    gr:hasNext <#game/com.lottostrategies/ne1/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/ne1/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Pick 5" .
+
+<#game/com.lottostrategies/ne2> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ne> ;
+    schema:name "MyDay" .
+
+<#game/com.lottostrategies/nea> lottery:drawTime "2230" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ne> ;
+    schema:name "Pick 3" .
+
+<#game/com.lottostrategies/nj1> lottery:drawTime "1956" ;
+    lottery:hasDrawDay gr:Monday,
+        gr:Thursday ;
+    lottery:hasJackpots <#game/com.lottostrategies/nj1/jackpots> ;
+    lottery:hasState <#state/nj> ;
+    gr:hasNext <#game/com.lottostrategies/nj1/jackpot/2014-02-24T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/nj1/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Pick 6 Lotto" .
+
+<#game/com.lottostrategies/nj2> lottery:drawTime "1956" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/nj2/jackpots> ;
+    lottery:hasState <#state/nj> ;
+    gr:hasNext <#game/com.lottostrategies/nj2/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/nj2/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Cash 5" .
+
+<#game/com.lottostrategies/nja> lottery:drawTime "1257" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/nj> ;
+    schema:name "Pick 3 Midday" .
+
+<#game/com.lottostrategies/njb> lottery:drawTime "1956" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/nj> ;
+    schema:name "Pick 3 Evening" .
+
+<#game/com.lottostrategies/njc> lottery:drawTime "1257" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/nj> ;
+    schema:name "Pick 4 Midday" .
+
+<#game/com.lottostrategies/njd> lottery:drawTime "1956" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/nj> ;
+    schema:name "Pick 4 Evening" .
+
+<#game/com.lottostrategies/nm2> lottery:drawTime "2345" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/nm2/jackpots> ;
+    lottery:hasState <#state/nm> ;
+    gr:hasNext <#game/com.lottostrategies/nm2/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/nm2/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Roadrunner Cash" .
+
+<#game/com.lottostrategies/nma> lottery:drawTime "2345" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/nm> ;
+    schema:name "Pick 3" .
+
+<#game/com.lottostrategies/ny1> lottery:drawTime "2321" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/ny1/jackpots> ;
+    lottery:hasState <#state/ny> ;
+    gr:hasNext <#game/com.lottostrategies/ny1/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/ny1/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Lotto" .
+
+<#game/com.lottostrategies/ny2> lottery:drawTime "2325" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ny> ;
+    schema:name "Take 5" .
+
+<#game/com.lottostrategies/ny3> lottery:drawTime "2100" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ny> ;
+    schema:name "Pick 10" .
+
+<#game/com.lottostrategies/ny4> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Monday,
+        gr:Thursday ;
+    lottery:hasState <#state/ny> ;
+    schema:name "Sweet Million" .
+
+<#game/com.lottostrategies/nya> lottery:drawTime "1230" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ny> ;
+    schema:name "Numbers Midday" .
+
+<#game/com.lottostrategies/nyb> lottery:drawTime "1930" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ny> ;
+    schema:name "Numbers Evening" .
+
+<#game/com.lottostrategies/nyc> lottery:drawTime "1230" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ny> ;
+    schema:name "Win 4 Midday" .
+
+<#game/com.lottostrategies/nyd> lottery:drawTime "1930" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ny> ;
+    schema:name "Win 4 Evening" .
+
+<#game/com.lottostrategies/oh3> lottery:drawTime "1929" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/oh3/jackpots> ;
+    lottery:hasState <#state/oh> ;
+    gr:hasNext <#game/com.lottostrategies/oh3/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/oh3/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Rolling Cash 5" .
+
+<#game/com.lottostrategies/oh5> lottery:drawTime "1929" ;
+    lottery:hasDrawDay gr:Monday,
+        gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/oh5/jackpots> ;
+    lottery:hasState <#state/oh> ;
+    gr:hasNext <#game/com.lottostrategies/oh5/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/oh5/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Classic Lotto" .
+
+<#game/com.lottostrategies/oha> lottery:drawTime "1229" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/oh> ;
+    schema:name "Pick 3 Midday" .
+
+<#game/com.lottostrategies/ohb> lottery:drawTime "1929" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/oh> ;
+    schema:name "Pick 3 Evening" .
+
+<#game/com.lottostrategies/ohc> lottery:drawTime "1229" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/oh> ;
+    schema:name "Pick 4 Midday" .
+
+<#game/com.lottostrategies/ohd> lottery:drawTime "1929" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/oh> ;
+    schema:name "Pick 4 Evening" .
+
+<#game/com.lottostrategies/ohf> lottery:drawTime "1229" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/oh> ;
+    schema:name "Pick 5 Midday" .
+
+<#game/com.lottostrategies/ohg> lottery:drawTime "1929" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/oh> ;
+    schema:name "Pick 5 Evening" .
+
+<#game/com.lottostrategies/ohk> lottery:drawTime "1929" ;
+    lottery:hasDrawDay gr:Monday,
+        gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/oh> ;
+    schema:name "Lotto Kicker" .
+
+<#game/com.lottostrategies/ok1> lottery:drawTime "2258" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ok> ;
+    schema:name "Cash 5" .
+
+<#game/com.lottostrategies/oka> lottery:drawTime "2258" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ok> ;
+    schema:name "Pick 3" .
+
+<#game/com.lottostrategies/on1> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/on> ;
+    schema:name "Ontario 49" .
+
+<#game/com.lottostrategies/on2> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Saturday ;
+    lottery:hasState <#state/on> ;
+    schema:name "Lottario" .
+
+<#game/com.lottostrategies/on3> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/on> ;
+    schema:name "Evening Keno" .
+
+<#game/com.lottostrategies/on6> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/on> ;
+    schema:name "Encore" .
+
+<#game/com.lottostrategies/on7> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Saturday ;
+    lottery:hasState <#state/on> ;
+    schema:name "Early Bird" .
+
+<#game/com.lottostrategies/on9> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/on> ;
+    schema:name "Poker Lotto" .
+
+<#game/com.lottostrategies/ona> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/on> ;
+    schema:name "Evening Pick 3" .
+
+<#game/com.lottostrategies/onb> lottery:drawTime "1420" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/on> ;
+    schema:name "Midday Pick 3" .
+
+<#game/com.lottostrategies/onc> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/on> ;
+    schema:name "Evening Pick 4" .
+
+<#game/com.lottostrategies/ond> lottery:drawTime "1420" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/on> ;
+    schema:name "MIdday PIck 4" .
+
+<#game/com.lottostrategies/one> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/on> ;
+    schema:name "Evening Pick 2" .
+
+<#game/com.lottostrategies/onf> lottery:drawTime "1420" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/on> ;
+    schema:name "Midday Pick 2" .
+
+<#game/com.lottostrategies/onk> lottery:drawTime "1420" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/on> ;
+    schema:name "Midday Keno" .
+
+<#game/com.lottostrategies/onm> lottery:drawTime "2100" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/on> ;
+    schema:name "Mega DIce" .
+
+<#game/com.lottostrategies/or1> lottery:drawTime "2229" ;
+    lottery:hasDrawDay gr:Monday,
+        gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/or1/jackpots> ;
+    lottery:hasState <#state/or> ;
+    gr:hasNext <#game/com.lottostrategies/or1/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/or1/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Megabucks" .
+
+<#game/com.lottostrategies/or2> lottery:drawTime "2230" ;
+    lottery:hasDrawDay gr:Monday,
+        gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/or> ;
+    schema:name "Win for Life" .
+
+<#game/com.lottostrategies/or4> lottery:drawTime "2100" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/or4/jackpots> ;
+    lottery:hasState <#state/or> ;
+    gr:hasNext <#game/com.lottostrategies/or4/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/or4/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Lucky Lines" .
+
+<#game/com.lottostrategies/ord> lottery:drawTime "1600" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/or> ;
+    schema:name "Pick 4 1PM" .
+
+<#game/com.lottostrategies/ore> lottery:drawTime "1900" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/or> ;
+    schema:name "Pick 4 4PM" .
+
+<#game/com.lottostrategies/orf> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/or> ;
+    schema:name "Pick 4 7PM" .
+
+<#game/com.lottostrategies/org> lottery:drawTime "2500" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/or> ;
+    schema:name "Pick 4 10PM" .
+
+<#game/com.lottostrategies/pa2> lottery:drawTime "1900" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/pa2/jackpots> ;
+    lottery:hasState <#state/pa> ;
+    gr:hasNext <#game/com.lottostrategies/pa2/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/pa2/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Cash 5" .
+
+<#game/com.lottostrategies/pa3> lottery:drawTime "1900" ;
+    lottery:hasDrawDay gr:Monday,
+        gr:Thursday ;
+    lottery:hasJackpots <#game/com.lottostrategies/pa3/jackpots> ;
+    lottery:hasState <#state/pa> ;
+    gr:hasNext <#game/com.lottostrategies/pa3/jackpot/2014-02-24T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/pa3/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Match 6 Lotto" .
+
+<#game/com.lottostrategies/pa6> lottery:drawTime "1335" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/pa6/jackpots> ;
+    lottery:hasState <#state/pa> ;
+    gr:hasNext <#game/com.lottostrategies/pa6/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/pa6/jackpot/2014-02-21T00%3A00%3A00> ;
+    schema:name "Treasure Hunt" .
+
+<#game/com.lottostrategies/paa> lottery:drawTime "1900" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/pa> ;
+    schema:name "Daily Number Evening" .
+
+<#game/com.lottostrategies/pab> lottery:drawTime "1335" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/pa> ;
+    schema:name "Daily Number Midday" .
+
+<#game/com.lottostrategies/pac> lottery:drawTime "1900" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/pa> ;
+    schema:name "Big 4 Evening" .
+
+<#game/com.lottostrategies/pad> lottery:drawTime "1335" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/pa> ;
+    schema:name "Big 4 Midday" .
+
+<#game/com.lottostrategies/pae> lottery:drawTime "1335" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/pa> ;
+    schema:name "Quinto Midday" .
+
+<#game/com.lottostrategies/paf> lottery:drawTime "1900" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/pa> ;
+    schema:name "Quinto Evening" .
+
+<#game/com.lottostrategies/pr1> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/pr1/jackpots> ;
+    lottery:hasState <#state/pr> ;
+    gr:hasNext <#game/com.lottostrategies/pr1/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/pr1/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Lotto" .
+
+<#game/com.lottostrategies/pr2> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/pr2/jackpots> ;
+    lottery:hasState <#state/pr> ;
+    gr:hasNext <#game/com.lottostrategies/pr2/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/pr2/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Revancha" .
+
+<#game/com.lottostrategies/pra> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/pr> ;
+    schema:name "Pega 2" .
+
+<#game/com.lottostrategies/prb> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/pr> ;
+    schema:name "Pega 3" .
+
+<#game/com.lottostrategies/prc> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/pr> ;
+    schema:name "Pega 4" .
+
+<#game/com.lottostrategies/qc1> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/qc> ;
+    schema:name "Quebec 49" .
+
+<#game/com.lottostrategies/qc2> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/qc> ;
+    schema:name "Banco" .
+
+<#game/com.lottostrategies/qc4> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/qc> ;
+    schema:name "Extra" .
+
+<#game/com.lottostrategies/qc5> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday ;
+    lottery:hasState <#state/qc> ;
+    schema:name "La Mini" .
+
+<#game/com.lottostrategies/qca> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/qc> ;
+    schema:name "La Quotidienne 3" .
+
+<#game/com.lottostrategies/qcc> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/qc> ;
+    schema:name "La Quotidienne 4" .
+
+<#game/com.lottostrategies/qcd> lottery:drawTime "2100" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/qc> ;
+    schema:name "Lotto D" .
+
+<#game/com.lottostrategies/qcf> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/qc> ;
+    schema:name "Astro" .
+
+<#game/com.lottostrategies/qcg> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/qc> ;
+    schema:name "Triplex" .
+
+<#game/com.lottostrategies/qch> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Thursday ;
+    schema:name "Jour de paye" .
+
+<#game/com.lottostrategies/qcm> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday ;
+    lottery:hasState <#state/qc> ;
+    schema:name "Quebec Max" .
+
+<#game/com.lottostrategies/qcs> lottery:drawTime "2100" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/qc> ;
+    schema:name "SprintO" .
+
+<#game/com.lottostrategies/ri2> lottery:drawTime "1930" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/ri2/jackpots> ;
+    lottery:hasState <#state/ri> ;
+    gr:hasNext <#game/com.lottostrategies/ri2/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/ri2/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Wild Money" .
+
+<#game/com.lottostrategies/ric> lottery:drawTime "1900" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/ri> ;
+    schema:name "The Numbers" .
+
+<#game/com.lottostrategies/sc2> lottery:drawTime "1900" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/sc> ;
+    schema:name "Palmetto Cash 5" .
+
+<#game/com.lottostrategies/sca> lottery:drawTime "1300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/sc> ;
+    schema:name "Pick 3 Midday" .
+
+<#game/com.lottostrategies/scb> lottery:drawTime "1900" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/sc> ;
+    schema:name "Pick 3 Evening" .
+
+<#game/com.lottostrategies/scc> lottery:drawTime "1300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/sc> ;
+    schema:name "Pick 4 Midday" .
+
+<#game/com.lottostrategies/scd> lottery:drawTime "1900" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/sc> ;
+    schema:name "Pick 4 Evening" .
+
+<#game/com.lottostrategies/sd1> lottery:drawTime "2230" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/sd1/jackpots> ;
+    lottery:hasState <#state/sd> ;
+    gr:hasNext <#game/com.lottostrategies/sd1/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/sd1/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Dakota Cash" .
+
+<#game/com.lottostrategies/tn3> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/tn3/jackpots> ;
+    lottery:hasState <#state/tn> ;
+    gr:hasNext <#game/com.lottostrategies/tn3/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/tn3/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Tennessee Cash" .
+
+<#game/com.lottostrategies/tna> lottery:drawTime "1328" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tn> ;
+    schema:name "Cash 3 Midday" .
+
+<#game/com.lottostrategies/tnb> lottery:drawTime "1328" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tn> ;
+    schema:name "Cash 4 Midday" .
+
+<#game/com.lottostrategies/tnc> lottery:drawTime "1928" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tn> ;
+    schema:name "Cash 3 Evening" .
+
+<#game/com.lottostrategies/tnd> lottery:drawTime "1928" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tn> ;
+    schema:name "Cash 4 Evening" .
+
+<#game/com.lottostrategies/tne> lottery:drawTime "1028" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tn> ;
+    schema:name "Cash 3 Morning" .
+
+<#game/com.lottostrategies/tnf> lottery:drawTime "1028" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tn> ;
+    schema:name "Cash 4 Morning" .
+
+<#game/com.lottostrategies/tx0> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Tuesday ;
+    schema:name "Megaplier" .
+
+<#game/com.lottostrategies/tx1> lottery:drawTime "2312" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/tx1/jackpots> ;
+    lottery:hasState <#state/tx> ;
+    gr:hasNext <#game/com.lottostrategies/tx1/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/tx1/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Lotto" .
+
+<#game/com.lottostrategies/tx2> lottery:drawTime "2312" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tx> ;
+    schema:name "Cash 5" .
+
+<#game/com.lottostrategies/tx3> lottery:drawTime "2312" ;
+    lottery:hasDrawDay gr:Monday,
+        gr:Thursday ;
+    lottery:hasJackpots <#game/com.lottostrategies/tx3/jackpots> ;
+    lottery:hasState <#state/tx> ;
+    gr:hasNext <#game/com.lottostrategies/tx3/jackpot/2014-02-24T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/tx3/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Two Step" .
+
+<#game/com.lottostrategies/txa> lottery:drawTime "2312" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tx> ;
+    schema:name "Pick 3 Night" .
+
+<#game/com.lottostrategies/txb> lottery:drawTime "1327" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tx> ;
+    schema:name "Daily 4 Day" .
+
+<#game/com.lottostrategies/txc> lottery:drawTime "1327" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tx> ;
+    schema:name "Pick 3 Day" .
+
+<#game/com.lottostrategies/txd> lottery:drawTime "2312" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tx> ;
+    schema:name "Daily 4 Night" .
+
+<#game/com.lottostrategies/txf> lottery:drawTime "1100" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tx> ;
+    schema:name "All or Nothing Morning" .
+
+<#game/com.lottostrategies/txg> lottery:drawTime "1327" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tx> ;
+    schema:name "All or Nothing Day" .
+
+<#game/com.lottostrategies/txh> lottery:drawTime "1900" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tx> ;
+    schema:name "All or Nothing Evening" .
+
+<#game/com.lottostrategies/txi> lottery:drawTime "2312" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tx> ;
+    schema:name "All or Nothing Night" .
+
+<#game/com.lottostrategies/txj> lottery:drawTime "1100" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tx> ;
+    schema:name "Pick 3 Morning" .
+
+<#game/com.lottostrategies/txk> lottery:drawTime "1900" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tx> ;
+    schema:name "Pick 3 Evening" .
+
+<#game/com.lottostrategies/txl> lottery:drawTime "1100" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tx> ;
+    schema:name "Daily 4 Morning" .
+
+<#game/com.lottostrategies/txm> lottery:drawTime "1900" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/tx> ;
+    schema:name "Daily 4 Evening" .
+
+<#game/com.lottostrategies/uk1> lottery:drawTime "1530" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/uk1/jackpots> ;
+    lottery:hasState <#state/uk> ;
+    gr:hasNext <#game/com.lottostrategies/uk1/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/uk1/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "LOTTO" .
+
+<#game/com.lottostrategies/uk2> lottery:drawTime "1530" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/uk> ;
+    schema:name "Lotto HotPicks" .
+
+<#game/com.lottostrategies/uk4> lottery:drawTime "1530" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/uk> ;
+    schema:name "Thunderball" .
+
+<#game/com.lottostrategies/uk6> lottery:drawTime "1700" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Tuesday ;
+    lottery:hasState <#state/uk> ;
+    schema:name "Millionaire Raffle" .
+
+<#game/com.lottostrategies/ukd> lottery:drawTime "1300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/uk> ;
+    schema:name "Post Code Daily" .
+
+<#game/com.lottostrategies/ukh> lottery:drawTime "1700" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/uk> ;
+    schema:name "Health Lottery" .
+
+<#game/com.lottostrategies/ukl> lottery:drawTime "1000" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/uk> ;
+    schema:name "Lunchtime 49s" .
+
+<#game/com.lottostrategies/ukp> lottery:drawTime "1700" ;
+    lottery:hasDrawDay gr:Saturday ;
+    schema:name "Post Code Weekly" .
+
+<#game/com.lottostrategies/ukt> lottery:drawTime "1300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/uk> ;
+    schema:name "Teatime 49s" .
+
+<#game/com.lottostrategies/ukw> lottery:drawTime "1700" ;
+    lottery:hasDrawDay gr:Saturday ;
+    lottery:hasState <#state/uk> ;
+    schema:name "Post Code Weekly" .
+
+<#game/com.lottostrategies/va1> lottery:drawTime "1400" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/va> ;
+    schema:name "Cash 5 Day" .
+
+<#game/com.lottostrategies/va2> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/va> ;
+    schema:name "Cash 5 Night" .
+
+<#game/com.lottostrategies/vaa> lottery:drawTime "1400" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/va> ;
+    schema:name "Pick 3 Day" .
+
+<#game/com.lottostrategies/vab> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/va> ;
+    schema:name "Pick 3 Night" .
+
+<#game/com.lottostrategies/vac> lottery:drawTime "1400" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/va> ;
+    schema:name "Pick 4 Day" .
+
+<#game/com.lottostrategies/vad> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/va> ;
+    schema:name "Pick 4 Night" .
+
+<#game/com.lottostrategies/wa1> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Monday,
+        gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/wa1/jackpots> ;
+    lottery:hasState <#state/wa> ;
+    gr:hasNext <#game/com.lottostrategies/wa1/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/wa1/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Lotto" .
+
+<#game/com.lottostrategies/wa4> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/wa> ;
+    schema:name "Keno" .
+
+<#game/com.lottostrategies/wa6> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Monday,
+        gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/wa6/jackpots> ;
+    lottery:hasState <#state/wa> ;
+    gr:hasNext <#game/com.lottostrategies/wa6/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/wa6/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Hit 5" .
+
+<#game/com.lottostrategies/wa7> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/wa> ;
+    schema:name "Match 4" .
+
+<#game/com.lottostrategies/waa> lottery:drawTime "2300" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/wa> ;
+    schema:name "Daily Game" .
+
+<#game/com.lottostrategies/wc1> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasState <#state/wc> ;
+    schema:name "Western 49" .
+
+<#game/com.lottostrategies/wc4> lottery:drawTime "2110" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/wc> ;
+    schema:name "Extra" .
+
+<#game/com.lottostrategies/wca> lottery:drawTime "2130" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/wc> ;
+    schema:name "Pick 3" .
+
+<#game/com.lottostrategies/wcs> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday ;
+    lottery:hasState <#state/wc> ;
+    schema:name "Western Max" .
+
+<#game/com.lottostrategies/wct> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday ;
+    lottery:hasState <#state/wc> ;
+    schema:name "WESTERN MAX 1" .
+
+<#game/com.lottostrategies/wcu> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday ;
+    lottery:hasState <#state/wc> ;
+    schema:name "WESTERN MAX 2" .
+
+<#game/com.lottostrategies/wcv> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday ;
+    lottery:hasState <#state/wc> ;
+    schema:name "WESTERN MAX 3" .
+
+<#game/com.lottostrategies/wcw> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday ;
+    lottery:hasState <#state/wc> ;
+    schema:name "WESTERN MAX 4" .
+
+<#game/com.lottostrategies/wcx> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday ;
+    lottery:hasState <#state/wc> ;
+    schema:name "WESTERN MAX 5" .
+
+<#game/com.lottostrategies/wcy> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday ;
+    lottery:hasState <#state/wc> ;
+    schema:name "WESTERN MAX 6" .
+
+<#game/com.lottostrategies/wcz> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday ;
+    lottery:hasState <#state/wc> ;
+    schema:name "WESTERN MAX 7" .
+
+<#game/com.lottostrategies/wi1> lottery:drawTime "2335" ;
+    lottery:hasDrawDay gr:Saturday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/wi1/jackpots> ;
+    lottery:hasState <#state/wi> ;
+    gr:hasNext <#game/com.lottostrategies/wi1/jackpot/2014-02-22T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/wi1/jackpot/2014-02-19T00%3A00%3A00> ;
+    schema:name "Megabucks" .
+
+<#game/com.lottostrategies/wi2> lottery:drawTime "2200" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/wi> ;
+    schema:name "Super Cash" .
+
+<#game/com.lottostrategies/wi5> lottery:drawTime "2335" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasJackpots <#game/com.lottostrategies/wi5/jackpots> ;
+    lottery:hasState <#state/wi> ;
+    gr:hasNext <#game/com.lottostrategies/wi5/jackpot/2014-02-21T00%3A00%3A00> ;
+    gr:hasPrevious <#game/com.lottostrategies/wi5/jackpot/2014-02-20T00%3A00%3A00> ;
+    schema:name "Badger 5" .
+
+<#game/com.lottostrategies/wia> lottery:drawTime "1935" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/wi> ;
+    schema:name "Pick 3" .
+
+<#game/com.lottostrategies/wic> lottery:drawTime "1935" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Sunday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/wi> ;
+    schema:name "Pick 4" .
+
+<#game/com.lottostrategies/wv1> lottery:drawTime "1900" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Thursday,
+        gr:Tuesday ;
+    lottery:hasState <#state/wv> ;
+    schema:name "Cash 25" .
+
+<#game/com.lottostrategies/wva> lottery:drawTime "1900" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/wv> ;
+    schema:name "Daily 3" .
+
+<#game/com.lottostrategies/wvc> lottery:drawTime "1900" ;
+    lottery:hasDrawDay gr:Friday,
+        gr:Monday,
+        gr:Saturday,
+        gr:Thursday,
+        gr:Tuesday,
+        gr:Wednesday ;
+    lottery:hasState <#state/wv> ;
+    schema:name "Daily 4" .
+
+<#game/com.lottostrategies/101/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 400000000 ;
+    schema:name "$400.00 Million" .
+
+<#game/com.lottostrategies/101/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 40000000 ;
+    schema:name "$40.00 Million" .
+
+<#game/com.lottostrategies/104/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 275000 ;
+    schema:name "$275,000" .
+
+<#game/com.lottostrategies/104/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 280000 ;
+    schema:name "$280,000" .
+
+<#game/com.lottostrategies/112/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 3590000 ;
+    schema:name "$3.59 Million" .
+
+<#game/com.lottostrategies/112/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 3700000 ;
+    schema:name "$3.70 Million" .
+
+<#game/com.lottostrategies/113/jackpot/2014-02-18T00%3A00%3A00> lottery:date "2014-02-18T00:00:00" ;
+    lottery:quantity 154000000 ;
+    schema:name "$154.00 Million" .
+
+<#game/com.lottostrategies/113/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 172000000 ;
+    schema:name "$172.00 Million" .
+
+<#game/com.lottostrategies/128/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 2950000 ;
+    schema:name "$2.95 Million" .
+
+<#game/com.lottostrategies/128/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 1000000 ;
+    schema:name "$1.00 Million" .
+
+<#game/com.lottostrategies/201/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 17000000 ;
+    schema:name "$17.00 Million" .
+
+<#game/com.lottostrategies/201/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 5000000 ;
+    schema:name "$5.00 Million" .
+
+<#game/com.lottostrategies/203/jackpot/2014-02-14T00%3A00%3A00> lottery:date "2014-02-14T00:00:00" ;
+    lottery:quantity 50000000 ;
+    schema:name "$50.00 Million" .
+
+<#game/com.lottostrategies/203/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 50000000 ;
+    schema:name "$50.00 Million" .
+
+<#game/com.lottostrategies/801/jackpot/2014-02-18T00%3A00%3A00> lottery:date "2014-02-18T00:00:00" ;
+    lottery:quantity 12000000 ;
+    schema:name "$12.00 Million" .
+
+<#game/com.lottostrategies/801/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 20000000 ;
+    schema:name "$20.00 Million" .
+
+<#game/com.lottostrategies/ar1/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 180000 ;
+    schema:name "$180,000" .
+
+<#game/com.lottostrategies/ar1/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 185000 ;
+    schema:name "$185,000" .
+
+<#game/com.lottostrategies/az2/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 55000 ;
+    schema:name "$55,000" .
+
+<#game/com.lottostrategies/az2/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 56000 ;
+    schema:name "$56,000" .
+
+<#game/com.lottostrategies/az3/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 1300000 ;
+    schema:name "$1.30 Million" .
+
+<#game/com.lottostrategies/az3/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 1400000 ;
+    schema:name "$1.40 Million" .
+
+<#game/com.lottostrategies/ca1/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 20000000 ;
+    schema:name "$20.00 Million" .
+
+<#game/com.lottostrategies/ca1/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 20000000 ;
+    schema:name "$20.00 Million" .
+
+<#game/com.lottostrategies/ca2/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 184000 ;
+    schema:name "$184,000" .
+
+<#game/com.lottostrategies/ca2/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 58000 ;
+    schema:name "$58,000" .
+
+<#game/com.lottostrategies/ca3/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 80000 ;
+    schema:name "$80,000" .
+
+<#game/com.lottostrategies/ca3/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 82000 ;
+    schema:name "$82,000" .
+
+<#game/com.lottostrategies/co1/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 2000000 ;
+    schema:name "$2.00 Million" .
+
+<#game/com.lottostrategies/co1/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 2100000 ;
+    schema:name "$2.10 Million" .
+
+<#game/com.lottostrategies/co2/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 20000 ;
+    schema:name "$20,000" .
+
+<#game/com.lottostrategies/co2/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 20000 ;
+    schema:name "$20,000" .
+
+<#game/com.lottostrategies/ct1/jackpot/2014-02-18T00%3A00%3A00> lottery:date "2014-02-18T00:00:00" ;
+    lottery:quantity 3400000 ;
+    schema:name "$3.40 Million" .
+
+<#game/com.lottostrategies/ct1/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 1000000 ;
+    schema:name "$1.00 Million" .
+
+<#game/com.lottostrategies/de2/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 142000 ;
+    schema:name "$142,000" .
+
+<#game/com.lottostrategies/de2/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 144000 ;
+    schema:name "$144,000" .
+
+<#game/com.lottostrategies/de3/jackpot/2014-02-18T00%3A00%3A00> lottery:date "2014-02-18T00:00:00" ;
+    lottery:quantity 34000 ;
+    schema:name "$34,000" .
+
+<#game/com.lottostrategies/de3/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 35000 ;
+    schema:name "$35,000" .
+
+<#game/com.lottostrategies/fl1/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 11000000 ;
+    schema:name "$11.00 Million" .
+
+<#game/com.lottostrategies/fl1/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 12000000 ;
+    schema:name "$12.00 Million" .
+
+<#game/com.lottostrategies/fl4/jackpot/2014-02-18T00%3A00%3A00> lottery:date "2014-02-18T00:00:00" ;
+    lottery:quantity 1300000 ;
+    schema:name "$1.30 Million" .
+
+<#game/com.lottostrategies/fl4/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 500000 ;
+    schema:name "$500,000" .
+
+<#game/com.lottostrategies/ga2/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 369000 ;
+    schema:name "$369,000" .
+
+<#game/com.lottostrategies/ga2/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 100000 ;
+    schema:name "$100,000" .
+
+<#game/com.lottostrategies/ie0/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 6000000 ;
+    schema:name "$6.00 Million" .
+
+<#game/com.lottostrategies/ie0/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 6500000 ;
+    schema:name "$6.50 Million" .
+
+<#game/com.lottostrategies/il3/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 100000 ;
+    schema:name "$100,000" .
+
+<#game/com.lottostrategies/il3/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 200000 ;
+    schema:name "$200,000" .
+
+<#game/com.lottostrategies/il4/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 15000000 ;
+    schema:name "$15.00 Million" .
+
+<#game/com.lottostrategies/il4/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 15250000 ;
+    schema:name "$15.25 Million" .
+
+<#game/com.lottostrategies/il5/jackpot/2013-08-10T00%3A00%3A00> lottery:date "2013-08-10T00:00:00" ;
+    lottery:quantity 100000 ;
+    schema:name "$100,000" .
+
+<#game/com.lottostrategies/il5/jackpot/2013-08-11T00%3A00%3A00> lottery:date "2013-08-11T00:00:00" ;
+    lottery:quantity 200000 ;
+    schema:name "$200,000" .
+
+<#game/com.lottostrategies/in1/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 16000000 ;
+    schema:name "$16.00 Million" .
+
+<#game/com.lottostrategies/in1/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 16500000 ;
+    schema:name "$16.50 Million" .
+
+<#game/com.lottostrategies/in8/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 77500 ;
+    schema:name "$77,500" .
+
+<#game/com.lottostrategies/in8/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 80000 ;
+    schema:name "$80,000" .
+
+<#game/com.lottostrategies/ks3/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 510000 ;
+    schema:name "$510,000" .
+
+<#game/com.lottostrategies/ks3/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 545000 ;
+    schema:name "$545,000" .
+
+<#game/com.lottostrategies/la1/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 975000 ;
+    schema:name "$975,000" .
+
+<#game/com.lottostrategies/la1/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 1050000 ;
+    schema:name "$1.05 Million" .
+
+<#game/com.lottostrategies/la5/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 90000 ;
+    schema:name "$90,000" .
+
+<#game/com.lottostrategies/la5/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 120000 ;
+    schema:name "$120,000" .
+
+<#game/com.lottostrategies/ma2/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 2400000 ;
+    schema:name "$2.40 Million" .
+
+<#game/com.lottostrategies/ma2/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 2600000 ;
+    schema:name "$2.60 Million" .
+
+<#game/com.lottostrategies/md4/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 650000 ;
+    schema:name "$650,000" .
+
+<#game/com.lottostrategies/md4/jackpot/2014-02-24T00%3A00%3A00> lottery:date "2014-02-24T00:00:00" ;
+    lottery:quantity 675000 ;
+    schema:name "$675,000" .
+
+<#game/com.lottostrategies/mi6/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 105000 ;
+    schema:name "$105,000" .
+
+<#game/com.lottostrategies/mi6/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 110000 ;
+    schema:name "$110,000" .
+
+<#game/com.lottostrategies/mi7/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 3600000 ;
+    schema:name "$3.60 Million" .
+
+<#game/com.lottostrategies/mi7/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 3850000 ;
+    schema:name "$3.85 Million" .
+
+<#game/com.lottostrategies/mn2/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 26000 ;
+    schema:name "$26,000" .
+
+<#game/com.lottostrategies/mn2/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 27000 ;
+    schema:name "$27,000" .
+
+<#game/com.lottostrategies/mn3/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 640000 ;
+    schema:name "$640,000" .
+
+<#game/com.lottostrategies/mn3/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 710000 ;
+    schema:name "$710,000" .
+
+<#game/com.lottostrategies/mo1/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 1000000 ;
+    schema:name "$1.00 Million" .
+
+<#game/com.lottostrategies/mo1/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 1100000 ;
+    schema:name "$1.10 Million" .
+
+<#game/com.lottostrategies/mo4/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 50000 ;
+    schema:name "$50,000" .
+
+<#game/com.lottostrategies/mo4/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 67000 ;
+    schema:name "$67,000" .
+
+<#game/com.lottostrategies/mt1/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 90000 ;
+    schema:name "$90,000" .
+
+<#game/com.lottostrategies/mt1/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 100000 ;
+    schema:name "$100,000" .
+
+<#game/com.lottostrategies/nc1/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 66000 ;
+    schema:name "$66,000" .
+
+<#game/com.lottostrategies/nc1/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 96000 ;
+    schema:name "$96,000" .
+
+<#game/com.lottostrategies/ne1/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 50000 ;
+    schema:name "$50,000" .
+
+<#game/com.lottostrategies/ne1/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 54000 ;
+    schema:name "$54,000" .
+
+<#game/com.lottostrategies/nj1/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 5600000 ;
+    schema:name "$5.60 Million" .
+
+<#game/com.lottostrategies/nj1/jackpot/2014-02-24T00%3A00%3A00> lottery:date "2014-02-24T00:00:00" ;
+    lottery:quantity 6000000 ;
+    schema:name "$6.00 Million" .
+
+<#game/com.lottostrategies/nj2/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 269000 ;
+    schema:name "$269,000" .
+
+<#game/com.lottostrategies/nj2/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 50000 ;
+    schema:name "$50,000" .
+
+<#game/com.lottostrategies/nm2/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 122000 ;
+    schema:name "$122,000" .
+
+<#game/com.lottostrategies/nm2/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 135000 ;
+    schema:name "$135,000" .
+
+<#game/com.lottostrategies/ny1/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 10900000 ;
+    schema:name "$10.90 Million" .
+
+<#game/com.lottostrategies/ny1/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 11400000 ;
+    schema:name "$11.40 Million" .
+
+<#game/com.lottostrategies/oh3/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 110000 ;
+    schema:name "$110,000" .
+
+<#game/com.lottostrategies/oh3/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 120000 ;
+    schema:name "$120,000" .
+
+<#game/com.lottostrategies/oh5/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 60900000 ;
+    schema:name "$60.90 Million" .
+
+<#game/com.lottostrategies/oh5/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 61100000 ;
+    schema:name "$61.10 Million" .
+
+<#game/com.lottostrategies/or1/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 2000000 ;
+    schema:name "$2.00 Million" .
+
+<#game/com.lottostrategies/or1/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 2100000 ;
+    schema:name "$2.10 Million" .
+
+<#game/com.lottostrategies/or4/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 21000 ;
+    schema:name "$21,000" .
+
+<#game/com.lottostrategies/or4/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 22000 ;
+    schema:name "$22,000" .
+
+<#game/com.lottostrategies/pa2/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 500000 ;
+    schema:name "$500,000" .
+
+<#game/com.lottostrategies/pa2/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 700000 ;
+    schema:name "$700,000" .
+
+<#game/com.lottostrategies/pa3/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 2000000 ;
+    schema:name "$2.00 Million" .
+
+<#game/com.lottostrategies/pa3/jackpot/2014-02-24T00%3A00%3A00> lottery:date "2014-02-24T00:00:00" ;
+    lottery:quantity 2200000 ;
+    schema:name "$2.20 Million" .
+
+<#game/com.lottostrategies/pa6/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 40000 ;
+    schema:name "$40,000" .
+
+<#game/com.lottostrategies/pa6/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 60000 ;
+    schema:name "$60,000" .
+
+<#game/com.lottostrategies/pr1/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 5500000 ;
+    schema:name "$5.50 Million" .
+
+<#game/com.lottostrategies/pr1/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 6000000 ;
+    schema:name "$6.00 Million" .
+
+<#game/com.lottostrategies/pr2/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 6000000 ;
+    schema:name "$6.00 Million" .
+
+<#game/com.lottostrategies/pr2/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 6300000 ;
+    schema:name "$6.30 Million" .
+
+<#game/com.lottostrategies/ri2/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 41000 ;
+    schema:name "$41,000" .
+
+<#game/com.lottostrategies/ri2/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 47000 ;
+    schema:name "$47,000" .
+
+<#game/com.lottostrategies/sd1/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 42000 ;
+    schema:name "$42,000" .
+
+<#game/com.lottostrategies/sd1/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 49000 ;
+    schema:name "$49,000" .
+
+<#game/com.lottostrategies/tn3/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 650000 ;
+    schema:name "$650,000" .
+
+<#game/com.lottostrategies/tn3/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 700000 ;
+    schema:name "$700,000" .
+
+<#game/com.lottostrategies/tx1/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 10750000 ;
+    schema:name "$10.75 Million" .
+
+<#game/com.lottostrategies/tx1/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 11750000 ;
+    schema:name "$11.75 Million" .
+
+<#game/com.lottostrategies/tx3/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 200000 ;
+    schema:name "$200,000" .
+
+<#game/com.lottostrategies/tx3/jackpot/2014-02-24T00%3A00%3A00> lottery:date "2014-02-24T00:00:00" ;
+    lottery:quantity 225000 ;
+    schema:name "$225,000" .
+
+<#game/com.lottostrategies/uk1/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 2200000 ;
+    schema:name "$2.20 Million" .
+
+<#game/com.lottostrategies/uk1/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 6600000 ;
+    schema:name "$6.60 Million" .
+
+<#game/com.lottostrategies/wa1/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 8500000 ;
+    schema:name "$8.50 Million" .
+
+<#game/com.lottostrategies/wa1/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 8700000 ;
+    schema:name "$8.70 Million" .
+
+<#game/com.lottostrategies/wa6/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 130000 ;
+    schema:name "$130,000" .
+
+<#game/com.lottostrategies/wa6/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 170000 ;
+    schema:name "$170,000" .
+
+<#game/com.lottostrategies/wi1/jackpot/2014-02-19T00%3A00%3A00> lottery:date "2014-02-19T00:00:00" ;
+    lottery:quantity 5400000 ;
+    schema:name "$5.40 Million" .
+
+<#game/com.lottostrategies/wi1/jackpot/2014-02-22T00%3A00%3A00> lottery:date "2014-02-22T00:00:00" ;
+    lottery:quantity 5400000 ;
+    schema:name "$5.40 Million" .
+
+<#game/com.lottostrategies/wi5/jackpot/2014-02-20T00%3A00%3A00> lottery:date "2014-02-20T00:00:00" ;
+    lottery:quantity 10000 ;
+    schema:name "$10,000" .
+
+<#game/com.lottostrategies/wi5/jackpot/2014-02-21T00%3A00%3A00> lottery:date "2014-02-21T00:00:00" ;
+    lottery:quantity 24000 ;
+    schema:name "$24,000" .
+
+<#country/united%20kingdom> schema:name "United Kingdom" .
+
+<#country/canada> schema:name "Canada" .
+
+<#state/bc> lottery:hasCountry <#country/canada> ;
+    lottery:website "http://www.bclc.com/" ;
+    schema:name "British Columbia" .
+
+<#state/ie> lottery:hasCountry <#country/united%20kingdom> ;
+    lottery:website "http://www.lotto.ie/" ;
+    schema:name "Irish" .
+
+<#state/pr> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.loteriaelectronicapr.com/" ;
+    schema:name "Puerto Rico" .
+
+<#state/co> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.coloradolottery.com" ;
+    schema:name "Colorado " .
+
+<#state/nd> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.ndlottery.org" ;
+    schema:name "North Dakota" .
+
+<#state/nm> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.nmlottery.com" ;
+    schema:name "New Mexico" .
+
+<#state/ok> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://lottery.ok.gov/" ;
+    schema:name "Oklahoma" .
+
+<#state/ri> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.rilot.com" ;
+    schema:name "Rhode Island" .
+
+<#state/sd> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.sdlottery.org" ;
+    schema:name "South Dakota" .
+
+<#state/ks> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.kslottery.com" ;
+    schema:name "Kansas" .
+
+<#state/la> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.louisianalottery.com" ;
+    schema:name "Louisiana" .
+
+<#state/mn> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.lottery.state.mn.us" ;
+    schema:name "Minnesota" .
+
+<#state/ne> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.nelottery.com" ;
+    schema:name "Nebraska" .
+
+<#state/wa> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.wa.gov/lot/home.htm" ;
+    schema:name "Washington" .
+
+<#state/wv> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.wvlottery.com/" ;
+    schema:name "West Virginia" .
+
+<#state/az> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.arizonalottery.com" ;
+    schema:name "Arizona" .
+
+<#state/ca> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.calottery.com" ;
+    schema:name "California" .
+
+<#state/id> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.idaholottery.com" ;
+    schema:name "Idaho" .
+
+<#state/ma> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.masslottery.com" ;
+    schema:name "Massachusetts" .
+
+<#state/mt> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.montanalottery.com" ;
+    schema:name "Montana" .
+
+<#state/nc> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.nc-educationlottery.org/" ;
+    schema:name "North Carolina" .
+
+<#state/nj> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.state.nj.us/lottery" ;
+    schema:name "New Jersey" .
+
+<#state/sc> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.sceducationlottery.com/" ;
+    schema:name "South Carolina" .
+
+<#state/wi> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.wilottery.com" ;
+    schema:name "Wisconsin" .
+
+<#state/ar> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.myarkansaslottery.com/" ;
+    schema:name "Arkansas" .
+
+<#state/mo> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.molottery.com" ;
+    schema:name "Missouri" .
+
+<#state/ac> lottery:hasCountry <#country/canada> ;
+    lottery:website "http://www.alc.ca/" ;
+    schema:name "Atlantic Canada" .
+
+<#state/ct> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.ctlottery.org" ;
+    schema:name "Connecticut" .
+
+<#state/dc> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.dclottery.com/" ;
+    schema:name "Dist. of Columbia" .
+
+<#state/de> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://lottery.state.de.us" ;
+    schema:name "Delaware" .
+
+<#state/ia> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.ialottery.com" ;
+    schema:name "Iowa" .
+
+<#state/md> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.mdlottery.com" ;
+    schema:name "Maryland" .
+
+<#state/mi> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.michigan.gov/lottery" ;
+    schema:name "Michigan" .
+
+<#state/or> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.oregonlottery.org" ;
+    schema:name "Oregon" .
+
+<#state/uk> lottery:hasCountry <#country/united%20kingdom> ;
+    lottery:website "http://www.national-lottery.co.uk/" ;
+    schema:name "UK National" .
+
+<#state/va> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.valottery.com" ;
+    schema:name "Virginia" .
+
+<#state/fl> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.flalottery.com" ;
+    schema:name "Florida" .
+
+<#state/ga> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.georgialottery.com" ;
+    schema:name "Georgia" .
+
+<#state/ky> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.kylottery.com" ;
+    schema:name "Kentucky" .
+
+<#state/me> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.mainelottery.com" ;
+    schema:name "Maine" .
+
+<#state/nh> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.nhlottery.org/" ;
+    schema:name "New Hampshire" .
+
+<#state/ny> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.nylottery.org" ;
+    schema:name "New York" .
+
+<#state/tn> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.tnlottery.com" ;
+    schema:name "Tennessee" .
+
+<#state/vt> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.vtlottery.com" ;
+    schema:name "Vermont" .
+
+<#state/in> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.hoosierlottery.com" ;
+    schema:name "Indiana" .
+
+<#state/oh> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.ohiolottery.com" ;
+    schema:name "Ohio" .
+
+<#state/pa> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.palottery.com" ;
+    schema:name "Pennsylvania" .
+
+<#state/qc> lottery:hasCountry <#country/canada> ;
+    lottery:website "http://www.loto-quebec.com/" ;
+    schema:name "Quebec" .
+
+<#state/wc> lottery:hasCountry <#country/canada> ;
+    lottery:website "http://www.wclc.com/" ;
+    schema:name "Western Canada" .
+
+<#state/on> lottery:hasCountry <#country/canada> ;
+    lottery:website "http://www.olgclotteries.ca/" ;
+    schema:name "Ontario" .
+
+<#state/tx> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.txlottery.org" ;
+    schema:name "Texas" .
+
+<#state/il> lottery:hasCountry <#country/u.s.a.> ;
+    lottery:website "http://www.illinoislottery.com" ;
+    schema:name "Illinois" .
+
+<#country/u.s.a.> schema:name "U.S.A." .
+
