@@ -235,26 +235,26 @@ def _day_iri(day):
 
 
 def _doc_iri(iri):
-    return URIRef(u"#com.lottostrategies-" + quote(iri))
+    return URIRef(u"#" + quote(iri))
 
 
 def _state_iri(state_id):
-    return _doc_iri(u"state-{0}".format(state_id.lower()))
+    return _doc_iri(u"state/{0}".format(state_id))
 
 
 def _country_iri(country_name):
-    return _doc_iri(u"country-{0}".format(country_name.lower()))
+    return _doc_iri(u"country/{0}".format(country_name.lower()))
 
 
 def _game_iri(gameId):
-    return _doc_iri(u"game-{0}".format(gameId.lower()))
+    return _doc_iri(u"com.lottostrategies/game/{0}".format(gameId.lower()))
 
 def _jackpots_iri(gameId):
-    return _doc_iri(u"game-{0}-jackpots".format(gameId.lower()))
+    return _doc_iri(u"com.lottostrategies/game/{0}/jackpots".format(gameId.lower()))
 
 def _jackpot_iri(game_id, isodate):
     return _doc_iri(
-        u'game-{game_id}-jackpot-{isodate}'.format(
+        u'com.lottostrategies/game/{game_id}/jackpot/{isodate}'.format(
             game_id=game_id.lower(),
             isodate=isodate,
         )
@@ -269,6 +269,8 @@ hasNext      = goodrelationsNS.hasNext
 hasPrevious  = goodrelationsNS.hasPrevious
 nameProp     = schemaOrgNS.name
 websiteProp  = lotteryNS.website
+stateIdProp  = lotteryNS.stateId
+gameIdProp   = lotteryNS.gameId
 drawTimeProp = lotteryNS.drawTime
 quantityProp = lotteryNS.quantity
 dateProp     = lotteryNS.date
@@ -295,12 +297,14 @@ def _state_graph(graph, xml_src):
         state_name = _extract_text(state_el, "state_name")
         website = _extract_text(state_el, "website")
 
-        state_iri = _state_iri(_extract_text(state_el, "state_id").lower())
+        state_id = _extract_text(state_el, "state_id")
+        state_iri = _state_iri(state_id)
         country_iri = _country_iri(country_name.lower())
 
-        # Give the state a name and website
+        # Give the state a stateId, name and website
         _state(graph, state_iri, nameProp, _literal(state_name))
         _state(graph, state_iri, websiteProp, _literal(website))
+        _state(graph, state_iri, stateIdProp, _literal(state_id))
 
         # give the state a country
         _state(graph, state_iri, hasCountry, country_iri)
@@ -324,7 +328,8 @@ def _game_graph(graph, xml_src):
 
         game_iri = _game_iri(game_id)
 
-        # give the game a name
+        # give the game a gameId and name
+        _state(graph, game_iri, gameIdProp, _literal(game_id))
         _state(graph, game_iri, nameProp, _literal(game_name))
 
         # give the game a drawTime; # TODO make iso8601

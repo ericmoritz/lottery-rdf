@@ -21,10 +21,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:lottery="http://api.gannett.com/ontologies/lottery#">
-    <owl:Ontology rdf:about="http://api.gannett.com/ontologies/lottery">
+    <owl:Ontology rdf:about="http://api.gannett.com/lottery/lottery.owl">
         <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://www.lottostrategies.com/</rdfs:seeAlso>
         <rdfs:comment>The ontology of the Lottery data from http://www.lottostrategies.com/</rdfs:comment>
-        <owl:imports rdf:resource="http://purl.org/goodrelations/v1"/>
     </owl:Ontology>
     
 
