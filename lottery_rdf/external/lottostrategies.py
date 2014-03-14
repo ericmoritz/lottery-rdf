@@ -7,7 +7,7 @@ then store those into an in-memory database
 """
 from dateutil.parser import parse as parse_date_date_util
 from dateutil import tz
-import requests
+from lottery_rdf.http import session as requests
 import isodate
 from lxml import etree
 from time import time
@@ -15,10 +15,7 @@ from datetime import datetime, time as dtime
 from rdflib import Namespace, Graph, Literal, URIRef
 from urllib import quote
 from collections import namedtuple
-
-goodrelationsNS = Namespace("http://purl.org/goodrelations/v1#")
-lotteryNS = Namespace("http://api.gannett.com/ontologies/lottery#")
-schemaOrgNS = Namespace("http://schema.org/")
+from lottery_rdf.namespaces import goodrelationsNS, lotteryNS, schemaOrgNS, rdfNS
 
 Config = namedtuple("Config", ["lottery_irl"])
 
@@ -30,15 +27,17 @@ est = tz.gettz('America/New_York')
 def load_data():
     return None # Todo
 
+
 def load_graph(config):
     apiNS = Namespace(config.lottery_irl)
-    return _xml_to_graph(*_download_all(apiNS))
+    triples =_xml_to_graph(*_download_all(apiNS))
+    return _rdflib_import(Graph(), triples)
+
 
 def dump(config, filename):
-    triples = load_graph(config)
-    g = _rdflib_import(Graph(), triples)
+    g = load_graph(config)
     with open(filename, "w") as f:
-        f.write(g.serialize())
+        f.write(g.serialize(format="turtle"))
 
 
 def _download_all(apiNS):
@@ -127,27 +126,27 @@ def summarize(stat):
 
 def _download_states_xml(apiNS):
     url = str(apiNS["all_states_info.xml"])
-    resp = requests.get(url)
+    resp = requests.get(url, stream=True)
     assert resp.status_code == 200
     return resp.content
 
 
 def _download_games_xml(apiNS):
     url = str(apiNS["all_games_info.xml"])
-    resp = requests.get(url)
+    resp = requests.get(url, stream=True)
     assert resp.status_code == 200
     return resp.content
 
 def _download_jackpot_xml(apiNS):
     url = str(apiNS["all_jackpots.xml"])
-    resp = requests.get(url)
+    resp = requests.get(url, stream=True)
     assert resp.status_code == 200
     return resp.content
 
 
 def _download_results_xml(apiNS):
     url = str(apiNS["all_results.xml"])
-    resp = requests.get(url)
+    resp = requests.get(url, stream=True)
     assert resp.status_code == 200
     return resp.content
 
@@ -237,10 +236,12 @@ def _day_iri(day):
 def _doc_iri(iri):
     return URIRef(u"#" + quote(iri))
 
+def _ext_iri(iri):
+    return URIRef(u"./" + quote(iri))
+
 
 def _state_iri(state_id):
-    return _doc_iri(u"state/{0}".format(state_id))
-
+    return _ext_iri(u"state-{0}".format(state_id))
 
 def _country_iri(country_name):
     return _doc_iri(u"country/{0}".format(country_name.lower()))
@@ -248,9 +249,6 @@ def _country_iri(country_name):
 
 def _game_iri(gameId):
     return _doc_iri(u"com.lottostrategies/game/{0}".format(gameId.lower()))
-
-def _jackpots_iri(gameId):
-    return _doc_iri(u"com.lottostrategies/game/{0}/jackpots".format(gameId.lower()))
 
 def _jackpot_iri(game_id, isodate):
     return _doc_iri(
@@ -264,9 +262,9 @@ def _jackpot_iri(game_id, isodate):
 hasCountry   = lotteryNS.hasCountry
 hasState     = lotteryNS.hasState
 hasDrawDay   = lotteryNS.hasDrawDay
-hasJackpots  = lotteryNS.hasJackpots
-hasNext      = goodrelationsNS.hasNext
-hasPrevious  = goodrelationsNS.hasPrevious
+hasJackpot  = lotteryNS.hasJackpot
+hasNext      = lotteryNS.hasNext
+hasPrevious  = lotteryNS.hasPrevious
 nameProp     = schemaOrgNS.name
 websiteProp  = lotteryNS.website
 stateIdProp  = lotteryNS.stateId
@@ -302,6 +300,7 @@ def _state_graph(graph, xml_src):
         country_iri = _country_iri(country_name.lower())
 
         # Give the state a stateId, name and website
+        _state(graph, state_iri, rdfNS.type, lotteryNS.State)
         _state(graph, state_iri, nameProp, _literal(state_name))
         _state(graph, state_iri, websiteProp, _literal(website))
         _state(graph, state_iri, stateIdProp, _literal(state_id))
@@ -310,6 +309,7 @@ def _state_graph(graph, xml_src):
         _state(graph, state_iri, hasCountry, country_iri)
         # give the country a name
         _state(graph, country_iri, nameProp, _literal(country_name))
+        _state(graph, country_iri, rdfNS.type, lotteryNS.Country)
 
         # give the games states
         for game_el in state_el.iterfind("games/game"):
@@ -331,6 +331,7 @@ def _game_graph(graph, xml_src):
         # give the game a gameId and name
         _state(graph, game_iri, gameIdProp, _literal(game_id))
         _state(graph, game_iri, nameProp, _literal(game_name))
+        _state(graph, game_iri, rdfNS.type, lotteryNS.Game)
 
         # give the game a drawTime; # TODO make iso8601
         _state(graph, game_iri, drawTimeProp, _literal(draw_time)) 
@@ -349,7 +350,6 @@ def _jackpots_graph(graph, xml_src):
         for game_el in state_el.iterfind("game_jackpot"):
             game_id = game_el.attrib['game_id']
             game_iri = _game_iri(game_id)
-            jackpots_iri = _jackpots_iri(game_id)
             
             if game_id not in seen_games:
                 for prop, el in [(hasNext, game_el.find("next_jackpot")), (hasPrevious, game_el.find("last_jackpot"))]:
@@ -363,9 +363,6 @@ def _jackpots_graph(graph, xml_src):
                         amount = int(_extract_text(el, "{prefix}amount_value".format(prefix=prefix)))
                         name = _extract_text(el, "{prefix}amount_desc".format(prefix=prefix))
                         
-                        # give the game a jackpots iri
-                        _state(graph, game_iri, hasJackpots, jackpots_iri)
-
                         # give the appropriate prop the jackpot_iri
                         _state(graph, game_iri, prop, jackpot_iri)
                         
@@ -373,6 +370,7 @@ def _jackpots_graph(graph, xml_src):
                         _state(graph, jackpot_iri, dateProp, _literal(dateStr))
                         _state(graph, jackpot_iri, nameProp, _literal(name))
                         _state(graph, jackpot_iri, quantityProp, _literal(amount))
+                        _state(graph, jackpot_iri, rdfNS.type, lotteryNS.Jackpot)
 
                 seen_games.add(game_id)
     return graph

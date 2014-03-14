@@ -6,3 +6,11 @@
 dist/
 /.lottery_env
 /ontologies/hydra.owl
+.web_cache/
+/bin/serialize_resources.py
+/bin/upload_resources.py
+deps/
+/.DS_Store
+/.test_vars
+/ontologies/hydra.json
+/ontologies/catalog-v001.xml
